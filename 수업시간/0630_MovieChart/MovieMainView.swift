@@ -12,31 +12,35 @@ struct MovieMainView: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                Section {
-                    AsyncImage(url: mainData.imageURL) { image in
-                        image
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
+            ZStack {
+                Image("theaterImage")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .edgesIgnoringSafeArea(.all)
+
+                    VStack {
+                        Text("🎥 실시간 영화 정보 확인하기")
+                            .font(.system(size: 25, weight: .semibold))
+                            .foregroundColor(.white)
+                            .padding(.bottom, 150)
                         
-                    } placeholder: {
-                        ProgressView()
+                            ForEach(mainData.rank) { rank in
+                                NavigationLink {
+                                    MovieRankView(rank: rank)
+                                } label: {
+                                    Text("\(rank.rank)")
+                                        .font(.system(size: 20, weight: .semibold))
+                                        .frame(width: 280, height: 30)
+                                        .padding(.all, 10)
+                                        .foregroundColor(.white)
+                                        .background(Color.blue)
+                                        .cornerRadius(10)
+                                        .padding(.bottom, 10)
+                                }
+                            }
                     }
-                }
-                
-                Section {
-                    Text("실시간 영화 정보 확인하기 ⭐️")
-                        .font(.system(size: 20, weight: .bold))
-                        
-                    ForEach(mainData.rank) { rank in
-                        NavigationLink {
-                            MovieRankView(rank: rank)
-                        } label: {
-                            Text("\(rank.rank)")
-                        }
-                    }
-                }
-            }.navigationTitle("영화 차트")
+            }
         }
     }
 }

@@ -22,7 +22,7 @@ struct MovieRankView: View {
                 NavigationLink {
                     MovieInfoView(movieInfo: rank)
                 } label: {
-                    Text("\(rank.movieTitle) 정보 보러가기")
+                    Text("\(rank.movieTitle) 출연진 확인하기")
                         .frame(maxWidth: .infinity, maxHeight: 50)
                         .background(.blue)
                         .foregroundColor(.white)

@@ -16,7 +16,7 @@ struct AppSchoolStudyApp: App {
 //            codeStudyUI(testData: TestData())
 //            NumberGame()
 //            QuizGame(gameStatus: .start)
-            ChangeMoney()
+            MovieMainView()
         }
     }
 }

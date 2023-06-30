@@ -15,13 +15,13 @@ protocol ImageURL {
 struct School: ImageURL {
     var name: String
     var imageURLString: String
-    
+
     var imageURL: URL {
         get {
             return URL(string: imageURLString)!
         }
     }
-    
+
     var grades: [Grade]
 }
 
@@ -42,18 +42,18 @@ struct Student: Identifiable, ImageURL {
     var name: String
     var nickanme: String
     var mbti: String
-    
+
     var imageURLString: String
-    
+
     var imageURL: URL {
         get {
             return URL(string: imageURLString)!
         }
     }
-    
+
     var likeDump: Bool // 부먹인가?
     var likeMintCho: Bool // 민초단인가?
-    
+
     var linkDumpString: String {
         get {
             if likeDump {
@@ -63,19 +63,11 @@ struct Student: Identifiable, ImageURL {
             }
         }
     }
-    
+
     var likeMintChoString: String {
         likeMintCho ? "민초단" : "반민초단"
     }
 }
-
-/*
-let grade1: Grade = Grade(name: "1학년")
-let grade2: Grade = Grade(name: "2학년")
-let grade3: Grade = Grade(name: "3학년")
-
-let school: School = School(name: "멋사중학교", grades: [grade1, grade2, grade3])
-*/
 
 let school: School = School(
     name: "멋사중학교",
@@ -84,7 +76,7 @@ let school: School = School(
         Grade(name: "1학년", schoolClasses: [
             SchoolClass(name: "1반", students: [
                 Student(name: "홍길동", nickanme: "호형호제", mbti: "ENFJ", imageURLString: "https://flexible.img.hani.co.kr/flexible/normal/290/206/imgdb/resize/2010/0712/1278390342_8000500986_20100712.JPG", likeDump: true, likeMintCho: false),
-                    
+
                 Student(name: "고길동", nickanme: "어르신", mbti: "ENFJ", imageURLString: "https://i.ytimg.com/vi/nKms4hBW6hQ/maxresdefault.jpg", likeDump: true, likeMintCho: false),
             ]),
             SchoolClass(name: "2반", students: [

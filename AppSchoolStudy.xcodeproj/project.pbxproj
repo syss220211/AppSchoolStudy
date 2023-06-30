@@ -16,6 +16,11 @@
 		D578B2BC2A3DE28800FC9F18 /* ObervableStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578B2BB2A3DE28800FC9F18 /* ObervableStudy.swift */; };
 		D58B86AB2A4DBF5500727CFD /* FinalMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B86AA2A4DBF5500727CFD /* FinalMoney.swift */; };
 		D58B86AD2A4E755300727CFD /* UnusedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B86AC2A4E755300727CFD /* UnusedButton.swift */; };
+		D58B86B62A4EA39F00727CFD /* GradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B86B52A4EA39F00727CFD /* GradeView.swift */; };
+		D58B86B82A4EA3B200727CFD /* SchoolClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B86B72A4EA3B200727CFD /* SchoolClassView.swift */; };
+		D58B86BA2A4EA3B800727CFD /* StudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B86B92A4EA3B800727CFD /* StudentView.swift */; };
+		D58B86BC2A4EA3D600727CFD /* SchoolMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B86BB2A4EA3D600727CFD /* SchoolMainView.swift */; };
+		D58B86BE2A4EA3E300727CFD /* SchoolData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B86BD2A4EA3E300727CFD /* SchoolData.swift */; };
 		D59439C82A39D6F2009C2F88 /* AppSchoolStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59439C72A39D6F2009C2F88 /* AppSchoolStudyApp.swift */; };
 		D59439CA2A39D6F2009C2F88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59439C92A39D6F2009C2F88 /* ContentView.swift */; };
 		D59439CC2A39D6F4009C2F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59439CB2A39D6F4009C2F88 /* Assets.xcassets */; };
@@ -39,6 +44,11 @@
 		D578B2BB2A3DE28800FC9F18 /* ObervableStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObervableStudy.swift; sourceTree = "<group>"; };
 		D58B86AA2A4DBF5500727CFD /* FinalMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalMoney.swift; sourceTree = "<group>"; };
 		D58B86AC2A4E755300727CFD /* UnusedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnusedButton.swift; sourceTree = "<group>"; };
+		D58B86B52A4EA39F00727CFD /* GradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeView.swift; sourceTree = "<group>"; };
+		D58B86B72A4EA3B200727CFD /* SchoolClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolClassView.swift; sourceTree = "<group>"; };
+		D58B86B92A4EA3B800727CFD /* StudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentView.swift; sourceTree = "<group>"; };
+		D58B86BB2A4EA3D600727CFD /* SchoolMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolMainView.swift; sourceTree = "<group>"; };
+		D58B86BD2A4EA3E300727CFD /* SchoolData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolData.swift; sourceTree = "<group>"; };
 		D59439C42A39D6F2009C2F88 /* AppSchoolStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSchoolStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59439C72A39D6F2009C2F88 /* AppSchoolStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSchoolStudyApp.swift; sourceTree = "<group>"; };
 		D59439C92A39D6F2009C2F88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,7 +88,8 @@
 				D55C6E482A4412020032D95F /* 0614_ListChar */,
 				D566E6F72A42B7FA00E2A480 /* 0619_NumberGame */,
 				D566E6F62A42B7EE00E2A480 /* 0621_QuizModel */,
-				D5A15F942A4D527A0084BECB /* 0629 */,
+				D5A15F942A4D527A0084BECB /* 0629_changeMoney */,
+				D58B86B42A4EA37600727CFD /* 0630_Navigation */,
 			);
 			name = "수업시간";
 			path = "수업시간";
@@ -140,6 +151,18 @@
 			name = CodeStudy;
 			sourceTree = "<group>";
 		};
+		D58B86B42A4EA37600727CFD /* 0630_Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				D58B86BB2A4EA3D600727CFD /* SchoolMainView.swift */,
+				D58B86B52A4EA39F00727CFD /* GradeView.swift */,
+				D58B86B72A4EA3B200727CFD /* SchoolClassView.swift */,
+				D58B86B92A4EA3B800727CFD /* StudentView.swift */,
+				D58B86BD2A4EA3E300727CFD /* SchoolData.swift */,
+			);
+			path = 0630_Navigation;
+			sourceTree = "<group>";
+		};
 		D59439BB2A39D6F2009C2F88 = {
 			isa = PBXGroup;
 			children = (
@@ -177,7 +200,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D5A15F942A4D527A0084BECB /* 0629 */ = {
+		D5A15F942A4D527A0084BECB /* 0629_changeMoney */ = {
 			isa = PBXGroup;
 			children = (
 				D5A15F952A4D52970084BECB /* ChangeMoney.swift */,
@@ -186,7 +209,7 @@
 				D58B86AA2A4DBF5500727CFD /* FinalMoney.swift */,
 				D58B86AC2A4E755300727CFD /* UnusedButton.swift */,
 			);
-			path = 0629;
+			path = 0629_changeMoney;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +286,13 @@
 				D5A15FA22A4D861E0084BECB /* MoneyCell.swift in Sources */,
 				D5A15F962A4D52970084BECB /* ChangeMoney.swift in Sources */,
 				D59439DD2A3A19F0009C2F88 /* Student.swift in Sources */,
+				D58B86B62A4EA39F00727CFD /* GradeView.swift in Sources */,
+				D58B86BC2A4EA3D600727CFD /* SchoolMainView.swift in Sources */,
+				D58B86B82A4EA3B200727CFD /* SchoolClassView.swift in Sources */,
 				D566E6F92A42B83300E2A480 /* QuizModel.swift in Sources */,
+				D58B86BE2A4EA3E300727CFD /* SchoolData.swift in Sources */,
 				D55046B52A4011A600F0AD4C /* NumberGame.swift in Sources */,
+				D58B86BA2A4EA3B800727CFD /* StudentView.swift in Sources */,
 				D5A15F9C2A4D84430084BECB /* backupview.swift in Sources */,
 				D578B2BC2A3DE28800FC9F18 /* ObervableStudy.swift in Sources */,
 				D566E6F52A42B40B00E2A480 /* QuizGame.swift in Sources */,

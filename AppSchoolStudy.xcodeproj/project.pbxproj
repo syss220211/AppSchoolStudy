@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D53064012A500A1D00824BE1 /* CharacterGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064002A500A1D00824BE1 /* CharacterGame.swift */; };
+		D53064032A500A3400824BE1 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064022A500A3400824BE1 /* CharacterData.swift */; };
+		D53064052A50163F00824BE1 /* PlayingGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064042A50163F00824BE1 /* PlayingGameView.swift */; };
 		D55046B52A4011A600F0AD4C /* NumberGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55046B42A4011A600F0AD4C /* NumberGame.swift */; };
 		D55C6E272A4404180032D95F /* PlayingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55C6E262A4404180032D95F /* PlayingGame.swift */; };
 		D566E6F52A42B40B00E2A480 /* QuizGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566E6F42A42B40B00E2A480 /* QuizGame.swift */; };
@@ -40,6 +43,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D53064002A500A1D00824BE1 /* CharacterGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGame.swift; sourceTree = "<group>"; };
+		D53064022A500A3400824BE1 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
+		D53064042A50163F00824BE1 /* PlayingGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingGameView.swift; sourceTree = "<group>"; };
 		D55046B42A4011A600F0AD4C /* NumberGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGame.swift; sourceTree = "<group>"; };
 		D55C6E262A4404180032D95F /* PlayingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingGame.swift; sourceTree = "<group>"; };
 		D566E6F42A42B40B00E2A480 /* QuizGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGame.swift; sourceTree = "<group>"; };
@@ -92,9 +98,20 @@
 			path = MongongStudy;
 			sourceTree = "<group>";
 		};
+		D53063FF2A5009BA00824BE1 /* 0630_Homework */ = {
+			isa = PBXGroup;
+			children = (
+				D53064022A500A3400824BE1 /* CharacterData.swift */,
+				D53064002A500A1D00824BE1 /* CharacterGame.swift */,
+				D53064042A50163F00824BE1 /* PlayingGameView.swift */,
+			);
+			path = 0630_Homework;
+			sourceTree = "<group>";
+		};
 		D55046B32A40118E00F0AD4C /* 수업시간 */ = {
 			isa = PBXGroup;
 			children = (
+				D53063FF2A5009BA00824BE1 /* 0630_Homework */,
 				D55C6E482A4412020032D95F /* 0614_ListChar */,
 				D566E6F72A42B7FA00E2A480 /* 0619_NumberGame */,
 				D566E6F62A42B7EE00E2A480 /* 0621_QuizModel */,
@@ -318,9 +335,11 @@
 				D566E6F92A42B83300E2A480 /* QuizModel.swift in Sources */,
 				D58B86BE2A4EA3E300727CFD /* SchoolData.swift in Sources */,
 				D58B86CB2A4EE06C00727CFD /* MovieCastView.swift in Sources */,
+				D53064012A500A1D00824BE1 /* CharacterGame.swift in Sources */,
 				D55046B52A4011A600F0AD4C /* NumberGame.swift in Sources */,
 				D58B86BA2A4EA3B800727CFD /* StudentView.swift in Sources */,
 				D5A15F9C2A4D84430084BECB /* backupview.swift in Sources */,
+				D53064032A500A3400824BE1 /* CharacterData.swift in Sources */,
 				D578B2BC2A3DE28800FC9F18 /* ObervableStudy.swift in Sources */,
 				D566E6F52A42B40B00E2A480 /* QuizGame.swift in Sources */,
 				D59439D82A39EEA3009C2F88 /* MapView.swift in Sources */,
@@ -332,6 +351,7 @@
 				D59439DA2A3A17C5009C2F88 /* study.swift in Sources */,
 				D58B86AD2A4E755300727CFD /* UnusedButton.swift in Sources */,
 				D566E7062A42E13800E2A480 /* FinalView.swift in Sources */,
+				D53064052A50163F00824BE1 /* PlayingGameView.swift in Sources */,
 				D58B86AB2A4DBF5500727CFD /* FinalMoney.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

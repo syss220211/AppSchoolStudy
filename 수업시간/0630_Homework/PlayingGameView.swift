@@ -35,34 +35,6 @@ struct PlayingGameView: View {
         }
     }
     
-//    private func getComputerResult() -> String {
-//
-////        Text(computerChoice?.name ?? "", computerChoice?.type.rawValue)
-//
-//        var name: String = ""
-//        var choice: String = ""
-//
-//        if let computerChoice {
-//
-//            name = computerChoice.name
-//            choice = computerChoice.type.rawValue
-//        }
-//
-//        return name + choice
-//    }
-//    private func getMyChoiceResult() -> String {
-//        var name: String = ""
-//        var choice: String = ""
-//
-//        if let myChoice {
-//
-//            name = myChoice.name
-//            choice = myChoice.type.rawValue
-//        }
-//
-//        return name + choice
-//    }
-    
     private func getComputerResult() -> (String, String) {
 
         var name: String = ""
@@ -184,9 +156,6 @@ struct PlayingGameView: View {
                     }
                 }
             }
-//            Text(finalResult)
-//                .font(.system(size: 30, weight: .bold))
-            // 여기가 alignmet Leading 끝
             
             Button {
                 self.getComputerData()
@@ -251,18 +220,9 @@ struct PlayingGameView: View {
                     }
                 }
             }
-            
-
-            
         }.padding(20)
     }
 }
-
-//struct resultMainView {
-//    var body: some view {
-//
-//    }
-//}
 
 struct PlayingGameView_Previews: PreviewProvider {
     static var previews: some View {

@@ -10,6 +10,14 @@
 		D53064012A500A1D00824BE1 /* CharacterGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064002A500A1D00824BE1 /* CharacterGame.swift */; };
 		D53064032A500A3400824BE1 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064022A500A3400824BE1 /* CharacterData.swift */; };
 		D53064052A50163F00824BE1 /* PlayingGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064042A50163F00824BE1 /* PlayingGameView.swift */; };
+		D54752882A53EEDA0085A9EB /* Metro.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54752872A53EEDA0085A9EB /* Metro.swift */; };
+		D547528A2A53EEE00085A9EB /* Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54752892A53EEE00085A9EB /* Basic.swift */; };
+		D547528C2A53EF200085A9EB /* MetroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547528B2A53EF200085A9EB /* MetroView.swift */; };
+		D547528E2A53EF380085A9EB /* SpecialProvinceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547528D2A53EF380085A9EB /* SpecialProvinceView.swift */; };
+		D54752902A53EF4B0085A9EB /* SpecialCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547528F2A53EF4B0085A9EB /* SpecialCityView.swift */; };
+		D54752922A53EF660085A9EB /* RegionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54752912A53EF660085A9EB /* RegionsData.swift */; };
+		D54752942A53EF7B0085A9EB /* RegionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54752932A53EF7B0085A9EB /* RegionProtocols.swift */; };
+		D54752962A53EF860085A9EB /* MetroProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54752952A53EF860085A9EB /* MetroProtocols.swift */; };
 		D55046B52A4011A600F0AD4C /* NumberGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55046B42A4011A600F0AD4C /* NumberGame.swift */; };
 		D55C6E272A4404180032D95F /* PlayingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55C6E262A4404180032D95F /* PlayingGame.swift */; };
 		D566E6F52A42B40B00E2A480 /* QuizGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566E6F42A42B40B00E2A480 /* QuizGame.swift */; };
@@ -46,6 +54,14 @@
 		D53064002A500A1D00824BE1 /* CharacterGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGame.swift; sourceTree = "<group>"; };
 		D53064022A500A3400824BE1 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
 		D53064042A50163F00824BE1 /* PlayingGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingGameView.swift; sourceTree = "<group>"; };
+		D54752872A53EEDA0085A9EB /* Metro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metro.swift; sourceTree = "<group>"; };
+		D54752892A53EEE00085A9EB /* Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic.swift; sourceTree = "<group>"; };
+		D547528B2A53EF200085A9EB /* MetroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroView.swift; sourceTree = "<group>"; };
+		D547528D2A53EF380085A9EB /* SpecialProvinceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialProvinceView.swift; sourceTree = "<group>"; };
+		D547528F2A53EF4B0085A9EB /* SpecialCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCityView.swift; sourceTree = "<group>"; };
+		D54752912A53EF660085A9EB /* RegionsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsData.swift; sourceTree = "<group>"; };
+		D54752932A53EF7B0085A9EB /* RegionProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionProtocols.swift; sourceTree = "<group>"; };
+		D54752952A53EF860085A9EB /* MetroProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroProtocols.swift; sourceTree = "<group>"; };
 		D55046B42A4011A600F0AD4C /* NumberGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGame.swift; sourceTree = "<group>"; };
 		D55C6E262A4404180032D95F /* PlayingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingGame.swift; sourceTree = "<group>"; };
 		D566E6F42A42B40B00E2A480 /* QuizGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGame.swift; sourceTree = "<group>"; };
@@ -108,16 +124,64 @@
 			path = 0630_Homework;
 			sourceTree = "<group>";
 		};
+		D54752812A53EE020085A9EB /* 0704_Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D54752862A53EECB0085A9EB /* Models */,
+				D54752852A53EEBF0085A9EB /* Protocols */,
+				D54752842A53EEB60085A9EB /* Data */,
+				D54752832A53EEAC0085A9EB /* View */,
+			);
+			path = 0704_Protocol;
+			sourceTree = "<group>";
+		};
+		D54752832A53EEAC0085A9EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D547528B2A53EF200085A9EB /* MetroView.swift */,
+				D547528D2A53EF380085A9EB /* SpecialProvinceView.swift */,
+				D547528F2A53EF4B0085A9EB /* SpecialCityView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D54752842A53EEB60085A9EB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D54752912A53EF660085A9EB /* RegionsData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D54752852A53EEBF0085A9EB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D54752932A53EF7B0085A9EB /* RegionProtocols.swift */,
+				D54752952A53EF860085A9EB /* MetroProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D54752862A53EECB0085A9EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D54752872A53EEDA0085A9EB /* Metro.swift */,
+				D54752892A53EEE00085A9EB /* Basic.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D55046B32A40118E00F0AD4C /* 수업시간 */ = {
 			isa = PBXGroup;
 			children = (
-				D53063FF2A5009BA00824BE1 /* 0630_Homework */,
 				D55C6E482A4412020032D95F /* 0614_ListChar */,
 				D566E6F72A42B7FA00E2A480 /* 0619_NumberGame */,
 				D566E6F62A42B7EE00E2A480 /* 0621_QuizModel */,
 				D5A15F942A4D527A0084BECB /* 0629_changeMoney */,
 				D58B86BF2A4EC50700727CFD /* 0630_MovieChart */,
 				D58B86B42A4EA37600727CFD /* 0630_Navigation */,
+				D53063FF2A5009BA00824BE1 /* 0630_Homework */,
+				D54752812A53EE020085A9EB /* 0704_Protocol */,
 			);
 			name = "수업시간";
 			path = "수업시간";
@@ -331,14 +395,18 @@
 				D59439DD2A3A19F0009C2F88 /* Student.swift in Sources */,
 				D58B86B62A4EA39F00727CFD /* GradeView.swift in Sources */,
 				D58B86BC2A4EA3D600727CFD /* SchoolMainView.swift in Sources */,
+				D54752902A53EF4B0085A9EB /* SpecialCityView.swift in Sources */,
 				D58B86B82A4EA3B200727CFD /* SchoolClassView.swift in Sources */,
 				D566E6F92A42B83300E2A480 /* QuizModel.swift in Sources */,
 				D58B86BE2A4EA3E300727CFD /* SchoolData.swift in Sources */,
 				D58B86CB2A4EE06C00727CFD /* MovieCastView.swift in Sources */,
+				D54752882A53EEDA0085A9EB /* Metro.swift in Sources */,
+				D54752962A53EF860085A9EB /* MetroProtocols.swift in Sources */,
 				D53064012A500A1D00824BE1 /* CharacterGame.swift in Sources */,
 				D55046B52A4011A600F0AD4C /* NumberGame.swift in Sources */,
 				D58B86BA2A4EA3B800727CFD /* StudentView.swift in Sources */,
 				D5A15F9C2A4D84430084BECB /* backupview.swift in Sources */,
+				D54752922A53EF660085A9EB /* RegionsData.swift in Sources */,
 				D53064032A500A3400824BE1 /* CharacterData.swift in Sources */,
 				D578B2BC2A3DE28800FC9F18 /* ObervableStudy.swift in Sources */,
 				D566E6F52A42B40B00E2A480 /* QuizGame.swift in Sources */,
@@ -350,8 +418,12 @@
 				D578B2B82A3DE25800FC9F18 /* codeStudyUI.swift in Sources */,
 				D59439DA2A3A17C5009C2F88 /* study.swift in Sources */,
 				D58B86AD2A4E755300727CFD /* UnusedButton.swift in Sources */,
+				D547528E2A53EF380085A9EB /* SpecialProvinceView.swift in Sources */,
+				D547528A2A53EEE00085A9EB /* Basic.swift in Sources */,
+				D54752942A53EF7B0085A9EB /* RegionProtocols.swift in Sources */,
 				D566E7062A42E13800E2A480 /* FinalView.swift in Sources */,
 				D53064052A50163F00824BE1 /* PlayingGameView.swift in Sources */,
+				D547528C2A53EF200085A9EB /* MetroView.swift in Sources */,
 				D58B86AB2A4DBF5500727CFD /* FinalMoney.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

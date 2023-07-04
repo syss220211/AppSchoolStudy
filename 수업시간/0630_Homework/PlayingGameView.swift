@@ -17,8 +17,7 @@ struct PlayingGameView: View {
     @State var computerChoice: Pokemon? = nil
     @State var myChoice: Pokemon? = nil
     @State var resultReturn: Bool = false
-    
-    
+        
     // test onChange
     @State var myChoiceName: String = ""
     @State var myChoiceType: String = ""

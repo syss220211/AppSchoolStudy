@@ -7,7 +7,7 @@
 
 import SwiftUI
 
- extension PokeType {
+extension PokeType {
     
     var image: String {
         switch self {
@@ -55,9 +55,8 @@ struct CharacterGame: View {
     }
     
     var body: some View {
-        
+
         NavigationStack {
-        
             VStack {
                 VStack(alignment: .leading) {
                     Text("캐릭터 이름을 입력해주세요.")

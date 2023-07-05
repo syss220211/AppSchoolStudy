@@ -25,6 +25,9 @@
 		D566E7062A42E13800E2A480 /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566E7052A42E13800E2A480 /* FinalView.swift */; };
 		D578B2B82A3DE25800FC9F18 /* codeStudyUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578B2B72A3DE25800FC9F18 /* codeStudyUI.swift */; };
 		D578B2BC2A3DE28800FC9F18 /* ObervableStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578B2BB2A3DE28800FC9F18 /* ObervableStudy.swift */; };
+		D589487F2A5545F7001111DE /* ToDoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D589487E2A5545F7001111DE /* ToDoStore.swift */; };
+		D58948812A554600001111DE /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58948802A554600001111DE /* ToDo.swift */; };
+		D58948832A554628001111DE /* ToDoMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58948822A554628001111DE /* ToDoMainView.swift */; };
 		D58B86AB2A4DBF5500727CFD /* FinalMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B86AA2A4DBF5500727CFD /* FinalMoney.swift */; };
 		D58B86AD2A4E755300727CFD /* UnusedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B86AC2A4E755300727CFD /* UnusedButton.swift */; };
 		D58B86B62A4EA39F00727CFD /* GradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B86B52A4EA39F00727CFD /* GradeView.swift */; };
@@ -69,6 +72,9 @@
 		D566E7052A42E13800E2A480 /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
 		D578B2B72A3DE25800FC9F18 /* codeStudyUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeStudyUI.swift; sourceTree = "<group>"; };
 		D578B2BB2A3DE28800FC9F18 /* ObervableStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObervableStudy.swift; sourceTree = "<group>"; };
+		D589487E2A5545F7001111DE /* ToDoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoStore.swift; sourceTree = "<group>"; };
+		D58948802A554600001111DE /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		D58948822A554628001111DE /* ToDoMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoMainView.swift; sourceTree = "<group>"; };
 		D58B86AA2A4DBF5500727CFD /* FinalMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalMoney.swift; sourceTree = "<group>"; };
 		D58B86AC2A4E755300727CFD /* UnusedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnusedButton.swift; sourceTree = "<group>"; };
 		D58B86B52A4EA39F00727CFD /* GradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeView.swift; sourceTree = "<group>"; };
@@ -182,6 +188,7 @@
 				D58B86B42A4EA37600727CFD /* 0630_Navigation */,
 				D53063FF2A5009BA00824BE1 /* 0630_Homework */,
 				D54752812A53EE020085A9EB /* 0704_Protocol */,
+				D589487D2A5545B5001111DE /* 0705_ToDo */,
 			);
 			name = "수업시간";
 			path = "수업시간";
@@ -241,6 +248,16 @@
 				D55C6E492A44126B0032D95F /* Obervable */,
 			);
 			name = CodeStudy;
+			sourceTree = "<group>";
+		};
+		D589487D2A5545B5001111DE /* 0705_ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				D589487E2A5545F7001111DE /* ToDoStore.swift */,
+				D58948802A554600001111DE /* ToDo.swift */,
+				D58948822A554628001111DE /* ToDoMainView.swift */,
+			);
+			path = 0705_ToDo;
 			sourceTree = "<group>";
 		};
 		D58B86B42A4EA37600727CFD /* 0630_Navigation */ = {
@@ -391,6 +408,7 @@
 				D58B86C12A4EC53800727CFD /* MovieMainView.swift in Sources */,
 				D58B86C32A4EC56600727CFD /* MovieData.swift in Sources */,
 				D5A15F962A4D52970084BECB /* ChangeMoney.swift in Sources */,
+				D589487F2A5545F7001111DE /* ToDoStore.swift in Sources */,
 				D58B86C92A4EDDF000727CFD /* MovieInfoView.swift in Sources */,
 				D59439DD2A3A19F0009C2F88 /* Student.swift in Sources */,
 				D58B86B62A4EA39F00727CFD /* GradeView.swift in Sources */,
@@ -418,12 +436,14 @@
 				D578B2B82A3DE25800FC9F18 /* codeStudyUI.swift in Sources */,
 				D59439DA2A3A17C5009C2F88 /* study.swift in Sources */,
 				D58B86AD2A4E755300727CFD /* UnusedButton.swift in Sources */,
+				D58948832A554628001111DE /* ToDoMainView.swift in Sources */,
 				D547528E2A53EF380085A9EB /* SpecialProvinceView.swift in Sources */,
 				D547528A2A53EEE00085A9EB /* Basic.swift in Sources */,
 				D54752942A53EF7B0085A9EB /* RegionProtocols.swift in Sources */,
 				D566E7062A42E13800E2A480 /* FinalView.swift in Sources */,
 				D53064052A50163F00824BE1 /* PlayingGameView.swift in Sources */,
 				D547528C2A53EF200085A9EB /* MetroView.swift in Sources */,
+				D58948812A554600001111DE /* ToDo.swift in Sources */,
 				D58B86AB2A4DBF5500727CFD /* FinalMoney.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

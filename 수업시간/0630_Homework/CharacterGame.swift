@@ -40,7 +40,7 @@ extension PokeType {
 struct CharacterGame: View {
     
     @State var name: String = ""
-    @State var type: PokeType = .fire
+    @State var type: PokeType = .water
     
     @State var pokemons: [Pokemon] = []
     

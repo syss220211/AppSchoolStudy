@@ -39,7 +39,6 @@ struct RandomMemberMainView: View {
                         } else {
                             isShowingAlert = true
                         }
-                        
                     } label: {
                         Label("데이터 삭제", systemImage: "minus")
                     }
@@ -50,7 +49,7 @@ struct RandomMemberMainView: View {
                 RandomMemberAddView(memberStore: memberStore, isShowingPlus: $isShowingPlus)
             })
             .alert(isPresented: $isShowingAlert) {
-                Alert(title: Text("전체 멤버를 삭제하시겠습니까?"), message: Text("돌이킬 수 없습니다"), primaryButton: .destructive(Text("Delete")) { memberStore.removeMembersAll()
+                Alert(title: Text("전체 멤버를 삭제하시겠습니까?"), message: Text("돌이킬 수 없습니다"), primaryButton: .destructive(Text("Delete")) { memberStore.removeMembersAll() // Delete 눌렀을때 탐
                 }, secondaryButton: .cancel())
             }
             

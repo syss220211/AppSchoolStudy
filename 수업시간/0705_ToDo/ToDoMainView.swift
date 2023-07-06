@@ -23,7 +23,7 @@ struct ToDoMainView: View {
                         HStack {
                             VStack(alignment: .leading) {
                                 Text("\(todo.agenda)")
-                                HStack {
+                                HStack {  
                                     Text("시작일")
                                     Text("\(todo.formattedStartDate)")
                                 }

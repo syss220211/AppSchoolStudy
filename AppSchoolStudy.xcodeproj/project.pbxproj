@@ -51,6 +51,11 @@
 		D5A15F962A4D52970084BECB /* ChangeMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A15F952A4D52970084BECB /* ChangeMoney.swift */; };
 		D5A15F9C2A4D84430084BECB /* backupview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A15F9B2A4D84430084BECB /* backupview.swift */; };
 		D5A15FA22A4D861E0084BECB /* MoneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A15FA12A4D861E0084BECB /* MoneyCell.swift */; };
+		D5D7C7452A5682C100BF7CBF /* RandomMemberMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7C7442A5682C100BF7CBF /* RandomMemberMainView.swift */; };
+		D5D7C7472A5683F600BF7CBF /* PickedMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7C7462A5683F600BF7CBF /* PickedMemberView.swift */; };
+		D5D7C74D2A56AE6300BF7CBF /* RandomMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7C74C2A56AE6300BF7CBF /* RandomMember.swift */; };
+		D5D7C74F2A56AE7500BF7CBF /* RandomMemberStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7C74E2A56AE7500BF7CBF /* RandomMemberStore.swift */; };
+		D5D7C7512A56B09E00BF7CBF /* RandomMemberAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7C7502A56B09E00BF7CBF /* RandomMemberAddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +104,11 @@
 		D5A15F952A4D52970084BECB /* ChangeMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeMoney.swift; sourceTree = "<group>"; };
 		D5A15F9B2A4D84430084BECB /* backupview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backupview.swift; sourceTree = "<group>"; };
 		D5A15FA12A4D861E0084BECB /* MoneyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyCell.swift; sourceTree = "<group>"; };
+		D5D7C7442A5682C100BF7CBF /* RandomMemberMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemberMainView.swift; sourceTree = "<group>"; };
+		D5D7C7462A5683F600BF7CBF /* PickedMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickedMemberView.swift; sourceTree = "<group>"; };
+		D5D7C74C2A56AE6300BF7CBF /* RandomMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMember.swift; sourceTree = "<group>"; };
+		D5D7C74E2A56AE7500BF7CBF /* RandomMemberStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemberStore.swift; sourceTree = "<group>"; };
+		D5D7C7502A56B09E00BF7CBF /* RandomMemberAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemberAddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +199,7 @@
 				D53063FF2A5009BA00824BE1 /* 0630_Homework */,
 				D54752812A53EE020085A9EB /* 0704_Protocol */,
 				D589487D2A5545B5001111DE /* 0705_ToDo */,
+				D5D7C7432A56828E00BF7CBF /* 0706_RandomMember */,
 			);
 			name = "수업시간";
 			path = "수업시간";
@@ -333,6 +344,34 @@
 			path = 0629_changeMoney;
 			sourceTree = "<group>";
 		};
+		D5D7C7432A56828E00BF7CBF /* 0706_RandomMember */ = {
+			isa = PBXGroup;
+			children = (
+				D5D7C74B2A56AE4400BF7CBF /* Views */,
+				D5D7C74A2A56AE3D00BF7CBF /* Model */,
+			);
+			path = 0706_RandomMember;
+			sourceTree = "<group>";
+		};
+		D5D7C74A2A56AE3D00BF7CBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5D7C74C2A56AE6300BF7CBF /* RandomMember.swift */,
+				D5D7C74E2A56AE7500BF7CBF /* RandomMemberStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5D7C74B2A56AE4400BF7CBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5D7C7442A5682C100BF7CBF /* RandomMemberMainView.swift */,
+				D5D7C7502A56B09E00BF7CBF /* RandomMemberAddView.swift */,
+				D5D7C7462A5683F600BF7CBF /* PickedMemberView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,6 +444,7 @@
 			files = (
 				D59439CA2A39D6F2009C2F88 /* ContentView.swift in Sources */,
 				D5A15FA22A4D861E0084BECB /* MoneyCell.swift in Sources */,
+				D5D7C7452A5682C100BF7CBF /* RandomMemberMainView.swift in Sources */,
 				D58B86C12A4EC53800727CFD /* MovieMainView.swift in Sources */,
 				D58B86C32A4EC56600727CFD /* MovieData.swift in Sources */,
 				D5A15F962A4D52970084BECB /* ChangeMoney.swift in Sources */,
@@ -418,12 +458,14 @@
 				D566E6F92A42B83300E2A480 /* QuizModel.swift in Sources */,
 				D58B86BE2A4EA3E300727CFD /* SchoolData.swift in Sources */,
 				D58B86CB2A4EE06C00727CFD /* MovieCastView.swift in Sources */,
+				D5D7C7472A5683F600BF7CBF /* PickedMemberView.swift in Sources */,
 				D54752882A53EEDA0085A9EB /* Metro.swift in Sources */,
 				D54752962A53EF860085A9EB /* MetroProtocols.swift in Sources */,
 				D53064012A500A1D00824BE1 /* CharacterGame.swift in Sources */,
 				D55046B52A4011A600F0AD4C /* NumberGame.swift in Sources */,
 				D58B86BA2A4EA3B800727CFD /* StudentView.swift in Sources */,
 				D5A15F9C2A4D84430084BECB /* backupview.swift in Sources */,
+				D5D7C7512A56B09E00BF7CBF /* RandomMemberAddView.swift in Sources */,
 				D54752922A53EF660085A9EB /* RegionsData.swift in Sources */,
 				D53064032A500A3400824BE1 /* CharacterData.swift in Sources */,
 				D578B2BC2A3DE28800FC9F18 /* ObervableStudy.swift in Sources */,
@@ -436,6 +478,8 @@
 				D578B2B82A3DE25800FC9F18 /* codeStudyUI.swift in Sources */,
 				D59439DA2A3A17C5009C2F88 /* study.swift in Sources */,
 				D58B86AD2A4E755300727CFD /* UnusedButton.swift in Sources */,
+				D5D7C74D2A56AE6300BF7CBF /* RandomMember.swift in Sources */,
+				D5D7C74F2A56AE7500BF7CBF /* RandomMemberStore.swift in Sources */,
 				D58948832A554628001111DE /* ToDoMainView.swift in Sources */,
 				D547528E2A53EF380085A9EB /* SpecialProvinceView.swift in Sources */,
 				D547528A2A53EEE00085A9EB /* Basic.swift in Sources */,

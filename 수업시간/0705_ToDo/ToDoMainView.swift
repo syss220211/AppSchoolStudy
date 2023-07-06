@@ -45,15 +45,6 @@ struct ToDoMainView: View {
                                 }
                             ))
                             .labelsHidden()
-
-//                            Button(action: {
-//                                todoList.removeTodo(index: todo)
-//                            }) {
-//                                Text("삭제").foregroundColor(.red)
-////                                Image(systemName: "trash").foregroundColor(.red)
-//                            }
-//                            .buttonStyle(BorderlessButtonStyle())
-//                            .disabled(!todo.completion)
                             
                         }
                         .labelsHidden()

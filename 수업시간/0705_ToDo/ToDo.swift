@@ -21,7 +21,7 @@ struct Todo: Identifiable, Equatable, Hashable {
         
     private static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yy/MM/dd HH:mm"
+        formatter.dateFormat = "yy년 M월 dd일 HH:mm"
         return formatter
     }()
     

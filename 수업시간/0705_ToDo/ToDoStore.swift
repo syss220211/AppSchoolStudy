@@ -17,7 +17,7 @@ class TodoStore: ObservableObject {
     func addTodo(id: UUID, agenda: String, dueDate: Date, completion: Bool, startDate: Date) {
         if agenda.count > 0 {
             
-            let newData: Todo =  Todo(agenda: agenda, startDate: startDate, dueDate: dueDate, completion: completion)//Todo(agenda: agenda, startDate: startDate, dueDate: dueDate, completion: completion)
+            let newData: Todo =  Todo(agenda: agenda, startDate: startDate, dueDate: dueDate, completion: completion)
             todoData.append(newData)
         }
     }

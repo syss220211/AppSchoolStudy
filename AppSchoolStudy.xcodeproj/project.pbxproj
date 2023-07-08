@@ -190,6 +190,7 @@
 		D55046B32A40118E00F0AD4C /* 수업시간 */ = {
 			isa = PBXGroup;
 			children = (
+				D59973EC2A57D8E700B3C134 /* 0707_StickerMemo */,
 				D55C6E482A4412020032D95F /* 0614_ListChar */,
 				D566E6F72A42B7FA00E2A480 /* 0619_NumberGame */,
 				D566E6F62A42B7EE00E2A480 /* 0621_QuizModel */,
@@ -330,6 +331,13 @@
 				D59439CE2A39D6F4009C2F88 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D59973EC2A57D8E700B3C134 /* 0707_StickerMemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 0707_StickerMemo;
 			sourceTree = "<group>";
 		};
 		D5A15F942A4D527A0084BECB /* 0629_changeMoney */ = {

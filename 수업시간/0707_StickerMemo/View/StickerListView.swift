@@ -10,13 +10,26 @@ import SwiftUI
 struct StickerListView: View {
     
     // 데이서 생성 및 초기화
-    @ObservedObject var stikerStore: StickerStore = StickerStore()
+    @ObservedObject var stickerStore: StickerStore = StickerStore()
     @State var addState: Bool = false
+    @State var editState: Bool = false
+    @State var sticker: Sticker = Sticker()
+    
     var body: some View {
         NavigationStack {
-            List(stikerStore.stickers) { sticker in
-                StickerView(stickerStore: stikerStore, sticker: sticker)
-                
+
+            List(stickerStore.stickers) { sticker in
+                Button {
+                    self.sticker = sticker
+                    editState = true
+                } label: {
+                    StickerView(stickerStore: stickerStore, sticker: sticker)
+                }
+                .swipeActions {
+                    Button("삭제"){
+                        stickerStore.removeSticker(sticker: sticker)
+                    }.tint(Color.red)
+                }
             }
             .listStyle(.plain)
             .navigationTitle("Sticker")
@@ -31,7 +44,17 @@ struct StickerListView: View {
                 }
             }
             .sheet(isPresented: $addState) {
-                StickerAddView(stickerStore: stikerStore, addState: $addState)
+                StickerAddView(stickerStore: stickerStore, addState: $addState)
+            }
+            .sheet(isPresented: $editState) {
+                StickerEditView(stickerStore: stickerStore, sticker: $sticker, editState: $editState, selectedColor: sticker.color)
+            }
+            .refreshable {
+                stickerStore.fetchStickers()
+            }
+            .onAppear {
+                stickerStore.fetchStickers()
+                
             }
         }
     }

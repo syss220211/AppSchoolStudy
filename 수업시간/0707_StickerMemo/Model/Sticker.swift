@@ -8,11 +8,34 @@
 import Foundation
 import SwiftUI
 
-struct Sticker: Identifiable, Hashable {
+enum ColorType: String, Codable, CaseIterable {
+    case red
+    case blue
+    case cyan
+    case yellow
+    case brown
+}
+
+func getColorType(_ type: ColorType) -> Color {
+    switch type {
+    case .red:
+        return .red
+    case .blue:
+        return .blue
+    case .cyan:
+        return .cyan
+    case .yellow:
+        return .yellow
+    case .brown:
+        return .brown
+    }
+}
+
+struct Sticker: Identifiable, Codable {
     var id: UUID = UUID()
-    var memo: String
-    var color: Color
-    var date: Date
+    var memo: String = ""
+    var date: Date = Date()
+    var color: ColorType = .red
     
     var dateString: String {
         let dateFormatter: DateFormatter = DateFormatter()

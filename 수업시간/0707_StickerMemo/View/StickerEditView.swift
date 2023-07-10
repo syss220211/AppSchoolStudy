@@ -1,5 +1,5 @@
 //
-//  StickerAddView.swift
+//  StickerEditView.swift
 //  AppSchoolStudy
 //
 //  Created by 박서연 on 2023/07/10.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct StickerAddView: View {
+struct StickerEditView: View {
     var stickerStore: StickerStore
-    @Binding var addState: Bool
-    @State var selectedColor: ColorType = .red
+    @Binding var sticker: Sticker
+    @Binding var editState: Bool
     @State var memo: String = ""
-    
-//    let colors: [ColorType] = [.blue, .brown, .cyan, .red, .yellow]
-    
+
+    @State var selectedColor: ColorType
+
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
@@ -26,40 +26,51 @@ struct StickerAddView: View {
                     }
                 }
                 .padding()
-                
+
                 Divider()
-                
+
                 Text("wirte a memo")
                     .font(.title)
-                
+
                 TextField("메모를 입력하세요.", text: $memo, axis: .vertical)
                     .font(.title2)
-                
+
                 Spacer()
             }
             .padding(20)
             .listStyle(.plain)
-            .navigationTitle("add a sticker")
+            .navigationTitle("Edit sticker")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("추가") {
-                        stickerStore.addSticker(memo: memo, color: selectedColor)
-                        addState = false
+                    Button("수정") {
+                        print(selectedColor)
+                        sticker.memo = memo
+                        sticker.date = Date()
+                        sticker.color = selectedColor
+                        stickerStore.updateSticker(sticker: sticker)
+                        editState = false
                     }
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("취소") {
-                        addState = false
+                        editState = false
                     }
                 }
+
             }
+        }
+        .onAppear {
+            memo = sticker.memo
+            selectedColor = sticker.color
+
         }
     }
 }
-
-struct StickerAddView_Previews: PreviewProvider {
-    static var previews: some View {
-        StickerAddView(stickerStore: StickerStore(), addState: .constant(true))
-    }
-}
+//
+//struct StickerEditView_Previews: PreviewProvider {
+//    static var previews: some View {
+////        StickerEditView(stickerStore: StickerStore(), sticker: Sticker(memo: "Good", date: Date()), isShowingEditSheet: .constant(true))
+//        StickerEditView(stickerStore: StickerStore(), sticker: Sticker(memo: "good", date: Date(), color: .blue), editState: .constant(true))
+//    }
+//}

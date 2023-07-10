@@ -72,7 +72,7 @@ struct ToDoMainView: View {
                     DatePicker(selection: $startDate) {
                         Text("시작일")
                     }
-                    .datePickerStyle(.compact)
+                    .datePickerStyle(GraphicalDatePickerStyle())
                     .environment(\.locale, Locale(identifier: "ko_KR"))
                     
                     DatePicker(selection: $dueDate) {

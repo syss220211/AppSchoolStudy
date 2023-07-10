@@ -16,7 +16,8 @@ struct AppSchoolStudyApp: App {
 //            codeStudyUI(testData: TestData())
 //            NumberGame()
 //            QuizGame(gameStatus: .start)
-            ToDoMainView(startDate: Date(), dueDate: Date())
+//            ToDoMainView(startDate: Date(), dueDate: Date())
+            StickerMainView()
         }
     }
 }

@@ -8,18 +8,34 @@
 import SwiftUI
 
 struct StickerColorSelectView: View {
-    @Binding var selectedColor: Color
-    let color: Color
+    @Binding var selectedColor: ColorType
+    let color: ColorType
+    
+    private func getColorType(_ type: ColorType) -> Color {
+        
+        switch type {
+        case .red:
+            return .red
+        case .blue:
+            return .blue
+        case .cyan:
+            return .cyan
+        case .yellow:
+            return .yellow
+        case .brown:
+            return .brown
+        }
+    }
     
     var body: some View {
         Button {
-            print("\(color)")
+            print("\(color.rawValue)")
             selectedColor = color
         } label: {
             ZStack {
                 Rectangle()
                     .shadow(radius: 6)
-                    .foregroundColor(color)
+                    .foregroundColor(getColorType(color))
                     .frame(maxHeight: 40)
                 
                 if selectedColor == color {

@@ -14,6 +14,7 @@
 		D5168B672A5B9CD700BB5D80 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B662A5B9CD700BB5D80 /* StickerView.swift */; };
 		D5168B692A5B9CE100BB5D80 /* StickerAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B682A5B9CE100BB5D80 /* StickerAddView.swift */; };
 		D5168B6B2A5B9CEF00BB5D80 /* StickerColorSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B6A2A5B9CEF00BB5D80 /* StickerColorSelectView.swift */; };
+		D5168B6D2A5BEEAB00BB5D80 /* StickerEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B6C2A5BEEAB00BB5D80 /* StickerEditView.swift */; };
 		D53064012A500A1D00824BE1 /* CharacterGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064002A500A1D00824BE1 /* CharacterGame.swift */; };
 		D53064032A500A3400824BE1 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064022A500A3400824BE1 /* CharacterData.swift */; };
 		D53064052A50163F00824BE1 /* PlayingGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064042A50163F00824BE1 /* PlayingGameView.swift */; };
@@ -73,6 +74,7 @@
 		D5168B662A5B9CD700BB5D80 /* StickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
 		D5168B682A5B9CE100BB5D80 /* StickerAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerAddView.swift; sourceTree = "<group>"; };
 		D5168B6A2A5B9CEF00BB5D80 /* StickerColorSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerColorSelectView.swift; sourceTree = "<group>"; };
+		D5168B6C2A5BEEAB00BB5D80 /* StickerEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerEditView.swift; sourceTree = "<group>"; };
 		D53064002A500A1D00824BE1 /* CharacterGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGame.swift; sourceTree = "<group>"; };
 		D53064022A500A3400824BE1 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
 		D53064042A50163F00824BE1 /* PlayingGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingGameView.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				D5168B642A5B9CCC00BB5D80 /* StickerMainView.swift */,
 				D5168B622A5B9CBA00BB5D80 /* StickerListView.swift */,
+				D5168B6C2A5BEEAB00BB5D80 /* StickerEditView.swift */,
 				D5168B662A5B9CD700BB5D80 /* StickerView.swift */,
 				D5168B682A5B9CE100BB5D80 /* StickerAddView.swift */,
 				D5168B6A2A5B9CEF00BB5D80 /* StickerColorSelectView.swift */,
@@ -540,6 +543,7 @@
 				D53064052A50163F00824BE1 /* PlayingGameView.swift in Sources */,
 				D547528C2A53EF200085A9EB /* MetroView.swift in Sources */,
 				D58948812A554600001111DE /* ToDo.swift in Sources */,
+				D5168B6D2A5BEEAB00BB5D80 /* StickerEditView.swift in Sources */,
 				D58B86AB2A4DBF5500727CFD /* FinalMoney.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

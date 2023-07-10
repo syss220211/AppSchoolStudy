@@ -23,9 +23,8 @@ struct StickerView: View {
             }
             Spacer()
         }
-        .frame(maxWidth: .infinity, maxHeight: 90)
-        
-        .background(sticker.color)
+//        .frame(maxWidth: .infinity, maxHeight: 90)
+        .background(getColorType(sticker.color))
         .shadow(radius: 6)
         .padding()
         
@@ -45,6 +44,6 @@ struct StickerView: View {
 
 struct StickerView_Previews: PreviewProvider {
     static var previews: some View {
-        StickerView(stickerStore: StickerStore(), sticker: Sticker(memo: "Hello", color: .red, date: Date()))
+        StickerView(stickerStore: StickerStore(), sticker: Sticker(memo: "Hello", date: Date(), color: .blue))
     }
 }

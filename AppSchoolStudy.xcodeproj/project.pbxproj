@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5168B5B2A5B9C8C00BB5D80 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B5A2A5B9C8C00BB5D80 /* Sticker.swift */; };
+		D5168B5D2A5B9C9200BB5D80 /* StickerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B5C2A5B9C9200BB5D80 /* StickerStore.swift */; };
+		D5168B632A5B9CBA00BB5D80 /* StickerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B622A5B9CBA00BB5D80 /* StickerListView.swift */; };
+		D5168B652A5B9CCC00BB5D80 /* StickerMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B642A5B9CCC00BB5D80 /* StickerMainView.swift */; };
+		D5168B672A5B9CD700BB5D80 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B662A5B9CD700BB5D80 /* StickerView.swift */; };
+		D5168B692A5B9CE100BB5D80 /* StickerAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B682A5B9CE100BB5D80 /* StickerAddView.swift */; };
+		D5168B6B2A5B9CEF00BB5D80 /* StickerColorSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B6A2A5B9CEF00BB5D80 /* StickerColorSelectView.swift */; };
 		D53064012A500A1D00824BE1 /* CharacterGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064002A500A1D00824BE1 /* CharacterGame.swift */; };
 		D53064032A500A3400824BE1 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064022A500A3400824BE1 /* CharacterData.swift */; };
 		D53064052A50163F00824BE1 /* PlayingGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064042A50163F00824BE1 /* PlayingGameView.swift */; };
@@ -59,6 +66,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D5168B5A2A5B9C8C00BB5D80 /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		D5168B5C2A5B9C9200BB5D80 /* StickerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerStore.swift; sourceTree = "<group>"; };
+		D5168B622A5B9CBA00BB5D80 /* StickerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerListView.swift; sourceTree = "<group>"; };
+		D5168B642A5B9CCC00BB5D80 /* StickerMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerMainView.swift; sourceTree = "<group>"; };
+		D5168B662A5B9CD700BB5D80 /* StickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		D5168B682A5B9CE100BB5D80 /* StickerAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerAddView.swift; sourceTree = "<group>"; };
+		D5168B6A2A5B9CEF00BB5D80 /* StickerColorSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerColorSelectView.swift; sourceTree = "<group>"; };
 		D53064002A500A1D00824BE1 /* CharacterGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGame.swift; sourceTree = "<group>"; };
 		D53064022A500A3400824BE1 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
 		D53064042A50163F00824BE1 /* PlayingGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingGameView.swift; sourceTree = "<group>"; };
@@ -130,6 +144,27 @@
 			path = MongongStudy;
 			sourceTree = "<group>";
 		};
+		D5168B5E2A5B9C9500BB5D80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5168B5A2A5B9C8C00BB5D80 /* Sticker.swift */,
+				D5168B5C2A5B9C9200BB5D80 /* StickerStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5168B5F2A5B9C9D00BB5D80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5168B642A5B9CCC00BB5D80 /* StickerMainView.swift */,
+				D5168B622A5B9CBA00BB5D80 /* StickerListView.swift */,
+				D5168B662A5B9CD700BB5D80 /* StickerView.swift */,
+				D5168B682A5B9CE100BB5D80 /* StickerAddView.swift */,
+				D5168B6A2A5B9CEF00BB5D80 /* StickerColorSelectView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D53063FF2A5009BA00824BE1 /* 0630_Homework */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +225,6 @@
 		D55046B32A40118E00F0AD4C /* 수업시간 */ = {
 			isa = PBXGroup;
 			children = (
-				D59973EC2A57D8E700B3C134 /* 0707_StickerMemo */,
 				D55C6E482A4412020032D95F /* 0614_ListChar */,
 				D566E6F72A42B7FA00E2A480 /* 0619_NumberGame */,
 				D566E6F62A42B7EE00E2A480 /* 0621_QuizModel */,
@@ -201,6 +235,7 @@
 				D54752812A53EE020085A9EB /* 0704_Protocol */,
 				D589487D2A5545B5001111DE /* 0705_ToDo */,
 				D5D7C7432A56828E00BF7CBF /* 0706_RandomMember */,
+				D59973EC2A57D8E700B3C134 /* 0707_StickerMemo */,
 			);
 			name = "수업시간";
 			path = "수업시간";
@@ -336,6 +371,8 @@
 		D59973EC2A57D8E700B3C134 /* 0707_StickerMemo */ = {
 			isa = PBXGroup;
 			children = (
+				D5168B5F2A5B9C9D00BB5D80 /* View */,
+				D5168B5E2A5B9C9500BB5D80 /* Model */,
 			);
 			path = 0707_StickerMemo;
 			sourceTree = "<group>";
@@ -455,18 +492,23 @@
 				D5D7C7452A5682C100BF7CBF /* RandomMemberMainView.swift in Sources */,
 				D58B86C12A4EC53800727CFD /* MovieMainView.swift in Sources */,
 				D58B86C32A4EC56600727CFD /* MovieData.swift in Sources */,
+				D5168B632A5B9CBA00BB5D80 /* StickerListView.swift in Sources */,
 				D5A15F962A4D52970084BECB /* ChangeMoney.swift in Sources */,
 				D589487F2A5545F7001111DE /* ToDoStore.swift in Sources */,
+				D5168B6B2A5B9CEF00BB5D80 /* StickerColorSelectView.swift in Sources */,
 				D58B86C92A4EDDF000727CFD /* MovieInfoView.swift in Sources */,
+				D5168B5D2A5B9C9200BB5D80 /* StickerStore.swift in Sources */,
 				D59439DD2A3A19F0009C2F88 /* Student.swift in Sources */,
 				D58B86B62A4EA39F00727CFD /* GradeView.swift in Sources */,
 				D58B86BC2A4EA3D600727CFD /* SchoolMainView.swift in Sources */,
 				D54752902A53EF4B0085A9EB /* SpecialCityView.swift in Sources */,
 				D58B86B82A4EA3B200727CFD /* SchoolClassView.swift in Sources */,
+				D5168B5B2A5B9C8C00BB5D80 /* Sticker.swift in Sources */,
 				D566E6F92A42B83300E2A480 /* QuizModel.swift in Sources */,
 				D58B86BE2A4EA3E300727CFD /* SchoolData.swift in Sources */,
 				D58B86CB2A4EE06C00727CFD /* MovieCastView.swift in Sources */,
 				D5D7C7472A5683F600BF7CBF /* PickedMemberView.swift in Sources */,
+				D5168B672A5B9CD700BB5D80 /* StickerView.swift in Sources */,
 				D54752882A53EEDA0085A9EB /* Metro.swift in Sources */,
 				D54752962A53EF860085A9EB /* MetroProtocols.swift in Sources */,
 				D53064012A500A1D00824BE1 /* CharacterGame.swift in Sources */,
@@ -487,10 +529,12 @@
 				D59439DA2A3A17C5009C2F88 /* study.swift in Sources */,
 				D58B86AD2A4E755300727CFD /* UnusedButton.swift in Sources */,
 				D5D7C74D2A56AE6300BF7CBF /* RandomMember.swift in Sources */,
+				D5168B652A5B9CCC00BB5D80 /* StickerMainView.swift in Sources */,
 				D5D7C74F2A56AE7500BF7CBF /* RandomMemberStore.swift in Sources */,
 				D58948832A554628001111DE /* ToDoMainView.swift in Sources */,
 				D547528E2A53EF380085A9EB /* SpecialProvinceView.swift in Sources */,
 				D547528A2A53EEE00085A9EB /* Basic.swift in Sources */,
+				D5168B692A5B9CE100BB5D80 /* StickerAddView.swift in Sources */,
 				D54752942A53EF7B0085A9EB /* RegionProtocols.swift in Sources */,
 				D566E7062A42E13800E2A480 /* FinalView.swift in Sources */,
 				D53064052A50163F00824BE1 /* PlayingGameView.swift in Sources */,

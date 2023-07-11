@@ -7,25 +7,12 @@
 
 import SwiftUI
 
+// MARK: - 선택된 컬러에 체크박스 표시하기
+
 struct StickerColorSelectView: View {
+    
     @Binding var selectedColor: ColorType
     let color: ColorType
-    
-    private func getColorType(_ type: ColorType) -> Color {
-        
-        switch type {
-        case .red:
-            return .red
-        case .blue:
-            return .blue
-        case .cyan:
-            return .cyan
-        case .yellow:
-            return .yellow
-        case .brown:
-            return .brown
-        }
-    }
     
     var body: some View {
         Button {

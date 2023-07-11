@@ -49,7 +49,7 @@ struct StickerListView: View {
             .sheet(isPresented: $editState) {
                 StickerEditView(stickerStore: stickerStore, sticker: $sticker, editState: $editState, selectedColor: sticker.color)
             }
-            .refreshable {
+            .refreshable { // 내려서 새로 고침
                 stickerStore.fetchStickers()
             }
             .onAppear {

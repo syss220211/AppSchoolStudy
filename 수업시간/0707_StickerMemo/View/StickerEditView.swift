@@ -9,10 +9,11 @@ import SwiftUI
 
 struct StickerEditView: View {
     var stickerStore: StickerStore
+    
     @Binding var sticker: Sticker
     @Binding var editState: Bool
+    
     @State var memo: String = ""
-
     @State var selectedColor: ColorType
 
     var body: some View {
@@ -41,7 +42,7 @@ struct StickerEditView: View {
             .listStyle(.plain)
             .navigationTitle("Edit sticker")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
+            .toolbar { // 네비게이션 툴바 추가
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("수정") {
                         print(selectedColor)
@@ -67,10 +68,4 @@ struct StickerEditView: View {
         }
     }
 }
-//
-//struct StickerEditView_Previews: PreviewProvider {
-//    static var previews: some View {
-////        StickerEditView(stickerStore: StickerStore(), sticker: Sticker(memo: "Good", date: Date()), isShowingEditSheet: .constant(true))
-//        StickerEditView(stickerStore: StickerStore(), sticker: Sticker(memo: "good", date: Date(), color: .blue), editState: .constant(true))
-//    }
-//}
+

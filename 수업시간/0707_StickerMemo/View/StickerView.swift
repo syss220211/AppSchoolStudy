@@ -23,14 +23,12 @@ struct StickerView: View {
             }
             Spacer()
         }
-//        .frame(maxWidth: .infinity, maxHeight: 90)
         .background(getColorType(sticker.color))
         .shadow(radius: 6)
         .padding()
         
-        .contextMenu{
+        .contextMenu{ // 꾹 눌러서 나오는 메뉴들
             ShareLink(item: sticker.memo)
-            
             Button {
                 stickerStore.removeSticker(sticker: sticker)
             } label: {

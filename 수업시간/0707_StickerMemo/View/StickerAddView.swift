@@ -13,8 +13,6 @@ struct StickerAddView: View {
     @State var selectedColor: ColorType = .red
     @State var memo: String = ""
     
-//    let colors: [ColorType] = [.blue, .brown, .cyan, .red, .yellow]
-    
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {

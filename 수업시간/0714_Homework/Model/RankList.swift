@@ -10,24 +10,24 @@ import SwiftUI
 
 enum RankColor: String, Codable, CaseIterable {
     case red
-    case blue
+    case orange
     case cyan
     case yellow
-    case brown
+    case pink
 }
 
-func getRankColor(_ type: ColorType) -> Color {
+func getRankColor(_ type: RankColor) -> Color {
     switch type {
     case .red:
         return .red
-    case .blue:
-        return .blue
+    case .orange:
+        return .orange
     case .cyan:
         return .cyan
     case .yellow:
         return .yellow
-    case .brown:
-        return .brown
+    case .pink:
+        return .pink
     }
 }
 

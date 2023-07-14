@@ -10,20 +10,21 @@ import SwiftUI
 
 class RankListStore: ObservableObject {
     @Published var rankLists: [RankList] = []
+    @Published var addedRanker: [RankList] = []
 
     init() {
         rankLists = [
-            RankList(name: "랭커1", power: 10, color: .blue),
+            RankList(name: "랭커1", power: 10, color: .pink),
             RankList(name: "랭커2", power: 20, color: .red),
-            RankList(name: "랭커3", power: 90, color: .brown),
+            RankList(name: "랭커3", power: 90, color: .orange),
             RankList(name: "랭커4", power: 1, color: .cyan)
         ]
     }
     
     // 랭커 추가
-    func addRankList(name: String, color: RankColor, power: Int) {
-        let rankList = RankList(name: name, power: power, color: color)
-        rankLists.insert(rankList, at: 0)
+    func addRankList(choicedRanker: RankList) {
+
+        addedRanker.insert(choicedRanker, at: 0)
 //        saveStickers()
     }
     

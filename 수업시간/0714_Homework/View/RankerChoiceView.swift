@@ -8,13 +8,61 @@
 import SwiftUI
 
 struct RankerChoiceView: View {
+    
+    // 데이터 생성 및 초기화
+    @State var rankAddState: Bool = false
+    @Binding var rankChoiceState: Bool
+    var addedRanker: [RankList]
+    var rankListStore: RankListStore
+    var ranker: RankList
+        
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(rankListStore.rankLists) { ranker in
+                Button {
+                    rankListStore.addRankList(choicedRanker: ranker)
+                    rankChoiceState = false
+                } label: {
+                    VStack{
+                        HStack {
+                            Text(ranker.name)
+                                .font(.title3)
+                            Spacer()
+                            Text("power : \(ranker.power)")
+                                .font(.title3)
+                        }
+                        .padding(20)
+                        .background(getRankColor(ranker.color))
+                        .shadow(radius: 8)
+                        .foregroundColor(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                    }
+                }
+            }
+            
+            .listStyle(.plain)
+            .navigationTitle("Ranker 목록")
+            
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        rankAddState = true
+                    } label: {
+                        Label("add", systemImage: "pencil.tip.crop.circle.badge.plus")
+                    }
+                }
+            }
+            .sheet(isPresented: $rankAddState) {
+                RankListView(rankListStore: rankListStore)
+            }
+
+        }
     }
 }
 
-struct RankerChoiceView_Previews: PreviewProvider {
-    static var previews: some View {
-        RankerChoiceView()
-    }
-}
+//struct RankerChoiceView_Previews: PreviewProvider {
+//    static var previews: some View {
+////        RankerChoiceView(rankChoiceState: true, addedRanker: [RankList()], rankListStore: RankListStore(), ranker: RankList())
+//        RankerChoiceView(rankChoiceState: true, addedRanker: [RankList], rankListStore: RankListStore(), ranker: RankList())
+//    }
+//}

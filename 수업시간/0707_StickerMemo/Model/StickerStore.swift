@@ -33,7 +33,7 @@ class StickerStore: ObservableObject {
     }
     
     func saveStickers() {
-        // JSON으로 배열 등등의 복잡 데이터를 단일한 데이터로 만들어준다
+        // JSON으로 배열 등등의 복잡 데이터를 단일한 데이터로 만들어준다 -> 데이터를 userDefault에 저장
         do {
             let endcoder: JSONEncoder = JSONEncoder()
             let data: Data = try endcoder.encode(stickers)
@@ -46,10 +46,6 @@ class StickerStore: ObservableObject {
     
     
     // 메모 추가
-//    func addSticker(memo: String, color: ColorType) {
-//        let sticker = Sticker(memo: memo, date: Date(), color: color)
-//        stickers.insert(sticker, at: 0)
-//    }
     func addSticker(memo: String, color: ColorType) {
         let sticker = Sticker(memo: memo, date: Date(), color: color)
         stickers.insert(sticker, at: 0)
@@ -61,7 +57,7 @@ class StickerStore: ObservableObject {
     func removeSticker(sticker: Sticker) {
         if let index = stickers.firstIndex(where: { $0.id == sticker.id }) {
             stickers.remove(at: index)
-            saveStickers() // Save stickers after removing a sticker
+            saveStickers()
         }
     }
 
@@ -75,7 +71,7 @@ class StickerStore: ObservableObject {
                 stickers[index].memo = sticker.memo
                 stickers[index].date = sticker.date
                 stickers[index].color = sticker.color
-                saveStickers() // Save stickers after updating a sticker
+                saveStickers()
             }
     }
     

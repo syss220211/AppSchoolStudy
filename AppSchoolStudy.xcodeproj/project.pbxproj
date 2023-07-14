@@ -28,6 +28,11 @@
 		D54752962A53EF860085A9EB /* MetroProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54752952A53EF860085A9EB /* MetroProtocols.swift */; };
 		D55046B52A4011A600F0AD4C /* NumberGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55046B42A4011A600F0AD4C /* NumberGame.swift */; };
 		D55C6E272A4404180032D95F /* PlayingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55C6E262A4404180032D95F /* PlayingGame.swift */; };
+		D55DCD002A6138E60010FEB6 /* RankListMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DCCFF2A6138E60010FEB6 /* RankListMainView.swift */; };
+		D55DCD022A6139200010FEB6 /* RankList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DCD012A6139200010FEB6 /* RankList.swift */; };
+		D55DCD042A6139400010FEB6 /* RankListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DCD032A6139400010FEB6 /* RankListStore.swift */; };
+		D55DCD062A613E020010FEB6 /* RankListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DCD052A613E020010FEB6 /* RankListView.swift */; };
+		D55DCD082A6144240010FEB6 /* RankerChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DCD072A6144240010FEB6 /* RankerChoiceView.swift */; };
 		D566E6F52A42B40B00E2A480 /* QuizGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566E6F42A42B40B00E2A480 /* QuizGame.swift */; };
 		D566E6F92A42B83300E2A480 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566E6F82A42B83300E2A480 /* QuizModel.swift */; };
 		D566E7062A42E13800E2A480 /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566E7052A42E13800E2A480 /* FinalView.swift */; };
@@ -88,6 +93,11 @@
 		D54752952A53EF860085A9EB /* MetroProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroProtocols.swift; sourceTree = "<group>"; };
 		D55046B42A4011A600F0AD4C /* NumberGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGame.swift; sourceTree = "<group>"; };
 		D55C6E262A4404180032D95F /* PlayingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingGame.swift; sourceTree = "<group>"; };
+		D55DCCFF2A6138E60010FEB6 /* RankListMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankListMainView.swift; sourceTree = "<group>"; };
+		D55DCD012A6139200010FEB6 /* RankList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankList.swift; sourceTree = "<group>"; };
+		D55DCD032A6139400010FEB6 /* RankListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankListStore.swift; sourceTree = "<group>"; };
+		D55DCD052A613E020010FEB6 /* RankListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankListView.swift; sourceTree = "<group>"; };
+		D55DCD072A6144240010FEB6 /* RankerChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankerChoiceView.swift; sourceTree = "<group>"; };
 		D566E6F42A42B40B00E2A480 /* QuizGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGame.swift; sourceTree = "<group>"; };
 		D566E6F82A42B83300E2A480 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 		D566E7052A42E13800E2A480 /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
@@ -239,6 +249,7 @@
 				D589487D2A5545B5001111DE /* 0705_ToDo */,
 				D5D7C7432A56828E00BF7CBF /* 0706_RandomMember */,
 				D59973EC2A57D8E700B3C134 /* 0707_StickerMemo */,
+				D55DCCFE2A6138A10010FEB6 /* 0714_Homework */,
 			);
 			name = "수업시간";
 			path = "수업시간";
@@ -260,6 +271,34 @@
 				D578B2BB2A3DE28800FC9F18 /* ObervableStudy.swift */,
 			);
 			name = Obervable;
+			sourceTree = "<group>";
+		};
+		D55DCCFE2A6138A10010FEB6 /* 0714_Homework */ = {
+			isa = PBXGroup;
+			children = (
+				D55DCD0A2A6144340010FEB6 /* View */,
+				D55DCD092A61442A0010FEB6 /* Model */,
+			);
+			path = 0714_Homework;
+			sourceTree = "<group>";
+		};
+		D55DCD092A61442A0010FEB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D55DCD012A6139200010FEB6 /* RankList.swift */,
+				D55DCD032A6139400010FEB6 /* RankListStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D55DCD0A2A6144340010FEB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D55DCCFF2A6138E60010FEB6 /* RankListMainView.swift */,
+				D55DCD052A613E020010FEB6 /* RankListView.swift */,
+				D55DCD072A6144240010FEB6 /* RankerChoiceView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D566E6F62A42B7EE00E2A480 /* 0621_QuizModel */ = {
@@ -508,9 +547,11 @@
 				D58B86B82A4EA3B200727CFD /* SchoolClassView.swift in Sources */,
 				D5168B5B2A5B9C8C00BB5D80 /* Sticker.swift in Sources */,
 				D566E6F92A42B83300E2A480 /* QuizModel.swift in Sources */,
+				D55DCD062A613E020010FEB6 /* RankListView.swift in Sources */,
 				D58B86BE2A4EA3E300727CFD /* SchoolData.swift in Sources */,
 				D58B86CB2A4EE06C00727CFD /* MovieCastView.swift in Sources */,
 				D5D7C7472A5683F600BF7CBF /* PickedMemberView.swift in Sources */,
+				D55DCD082A6144240010FEB6 /* RankerChoiceView.swift in Sources */,
 				D5168B672A5B9CD700BB5D80 /* StickerView.swift in Sources */,
 				D54752882A53EEDA0085A9EB /* Metro.swift in Sources */,
 				D54752962A53EF860085A9EB /* MetroProtocols.swift in Sources */,
@@ -521,6 +562,7 @@
 				D5D7C7512A56B09E00BF7CBF /* RandomMemberAddView.swift in Sources */,
 				D54752922A53EF660085A9EB /* RegionsData.swift in Sources */,
 				D53064032A500A3400824BE1 /* CharacterData.swift in Sources */,
+				D55DCD042A6139400010FEB6 /* RankListStore.swift in Sources */,
 				D578B2BC2A3DE28800FC9F18 /* ObervableStudy.swift in Sources */,
 				D566E6F52A42B40B00E2A480 /* QuizGame.swift in Sources */,
 				D59439D82A39EEA3009C2F88 /* MapView.swift in Sources */,
@@ -530,8 +572,10 @@
 				D59439D62A39EDDA009C2F88 /* CircleImage.swift in Sources */,
 				D578B2B82A3DE25800FC9F18 /* codeStudyUI.swift in Sources */,
 				D59439DA2A3A17C5009C2F88 /* study.swift in Sources */,
+				D55DCD022A6139200010FEB6 /* RankList.swift in Sources */,
 				D58B86AD2A4E755300727CFD /* UnusedButton.swift in Sources */,
 				D5D7C74D2A56AE6300BF7CBF /* RandomMember.swift in Sources */,
+				D55DCD002A6138E60010FEB6 /* RankListMainView.swift in Sources */,
 				D5168B652A5B9CCC00BB5D80 /* StickerMainView.swift in Sources */,
 				D5D7C74F2A56AE7500BF7CBF /* RandomMemberStore.swift in Sources */,
 				D58948832A554628001111DE /* ToDoMainView.swift in Sources */,

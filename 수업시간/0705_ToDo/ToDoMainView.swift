@@ -69,16 +69,19 @@ struct ToDoMainView: View {
                 VStack {
                     TextField("할일을 입력하세요", text: $todo)
                     
-                    DatePicker(selection: $startDate) {
+                    DatePicker(selection: $startDate, displayedComponents: .hourAndMinute) {
                         Text("시작일")
                     }
-                    .datePickerStyle(GraphicalDatePickerStyle())
+//                    .datePickerStyle(GraphicalDatePickerStyle())
                     .environment(\.locale, Locale(identifier: "ko_KR"))
                     
-                    DatePicker(selection: $dueDate) {
+                    
+                    // 마감일 피커
+                    DatePicker(selection: $dueDate, displayedComponents: .date) {
                         Text("마감일")
                     }
-                    .datePickerStyle(.compact)
+//                    .datePickerStyle(.compact)
+                    .datePickerStyle(GraphicalDatePickerStyle())
                     .environment(\.locale, Locale(identifier: "ko_KR")) //한국어 설정
                     
                     

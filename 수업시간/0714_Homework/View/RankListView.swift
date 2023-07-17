@@ -11,7 +11,7 @@ struct RankListView: View {
     
     // 데이서 생성 및 초기화
     @ObservedObject var rankListStore: RankListStore = RankListStore()
-    @State var ranker: RankList = RankList()
+//    @State var ranker: RankList = RankList()
     @State var rankChoiceState: Bool = false
     
     
@@ -30,6 +30,11 @@ struct RankListView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .shadow(radius: 8)
                     .foregroundColor(.white)
+                    .swipeActions {
+                        Button("삭제"){
+                            rankListStore.removeRankList(rankList: ranker)
+                        }.tint(Color.red)
+                    }
                 }            
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
@@ -41,7 +46,7 @@ struct RankListView: View {
                     }
                 }
                 .sheet(isPresented: $rankChoiceState) {
-                    RankerChoiceView(rankChoiceState: $rankChoiceState, rankListStore: rankListStore, ranker: ranker)
+                    RankerChoiceView(rankChoiceState: $rankChoiceState, rankListStore: rankListStore)
                 }
     
                 // 정렬 버튼 추가 테스트

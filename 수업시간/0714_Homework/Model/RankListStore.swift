@@ -31,7 +31,7 @@ class RankListStore: ObservableObject {
     // 랭커 삭제
     func removeRankList(rankList: RankList) {
         if let index = rankLists.firstIndex(where: { $0.id == rankList.id }) {
-            rankLists.remove(at: index)
+            addedRanker.remove(at: index)
         }
     }
 }

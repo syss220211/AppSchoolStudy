@@ -38,3 +38,4 @@ struct RankList: Identifiable {
     var photo: String?
     var color: RankColor = .red
 }
+

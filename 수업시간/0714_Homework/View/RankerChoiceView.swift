@@ -12,7 +12,7 @@ struct RankerChoiceView: View {
     // 데이터 생성 및 초기화
     @State var rankAddState: Bool = false
     @Binding var rankChoiceState: Bool
-    var addedRanker: [RankList]
+    
     var rankListStore: RankListStore
     var ranker: RankList
         
@@ -21,6 +21,7 @@ struct RankerChoiceView: View {
             List(rankListStore.rankLists) { ranker in
                 Button {
                     rankListStore.addRankList(choicedRanker: ranker)
+                    print(ranker.name)
                     rankChoiceState = false
                 } label: {
                     VStack{
@@ -60,9 +61,9 @@ struct RankerChoiceView: View {
     }
 }
 
-//struct RankerChoiceView_Previews: PreviewProvider {
-//    static var previews: some View {
-////        RankerChoiceView(rankChoiceState: true, addedRanker: [RankList()], rankListStore: RankListStore(), ranker: RankList())
-//        RankerChoiceView(rankChoiceState: true, addedRanker: [RankList], rankListStore: RankListStore(), ranker: RankList())
-//    }
-//}
+struct RankerChoiceView_Previews: PreviewProvider {
+    static var previews: some View {
+//        StickerAddView(stickerStore: StickerStore(), addState: .constant(true))
+        RankerChoiceView(rankChoiceState: .constant(true), rankListStore: RankListStore(), ranker: RankList())
+    }
+}

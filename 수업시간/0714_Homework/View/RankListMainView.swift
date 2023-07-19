@@ -10,7 +10,7 @@ import SwiftUI
 struct RankListMainView: View {
     var body: some View {
         NavigationStack {
-//            RankListView()
+            RankListView()
         }
     }
 }

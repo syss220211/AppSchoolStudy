@@ -14,6 +14,9 @@ enum RankColor: String, Codable, CaseIterable {
     case cyan
     case yellow
     case pink
+    case brown
+    case green
+    case gray
 }
 
 func getRankColor(_ type: RankColor) -> Color {
@@ -28,6 +31,12 @@ func getRankColor(_ type: RankColor) -> Color {
         return .yellow
     case .pink:
         return .pink
+    case .brown:
+        return .brown
+    case .green:
+        return .green
+    case .gray:
+        return .gray
     }
 }
 

@@ -29,7 +29,7 @@ struct RankerChoiceView: View {
                         showAlert = true
                     }
                 } label: {
-                    VStack{
+                    VStack {
                         HStack {
                             Text(ranker.name)
                                 .font(.title3)
@@ -52,20 +52,6 @@ struct RankerChoiceView: View {
             }
             .listStyle(.plain)
             .navigationTitle("Ranker 목록")
-            
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        rankAddState = true
-                    } label: {
-                        Label("add", systemImage: "pencil.tip.crop.circle.badge.plus")
-                    }
-                }
-            }
-            .sheet(isPresented: $rankAddState) {
-                RankListView(rankListStore: rankListStore)
-            }
-
         }
     }
 }

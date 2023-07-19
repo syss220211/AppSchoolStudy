@@ -16,49 +16,31 @@ class RankListStore: ObservableObject {
         rankLists = [
             RankList(name: "랭커1", power: 10, color: .pink),
             RankList(name: "랭커2", power: 20, color: .red),
-            RankList(name: "랭커3", power: 90, color: .orange),
-            RankList(name: "랭커4", power: 1, color: .cyan)
+            RankList(name: "랭커3", power: 878, color: .orange),
+            RankList(name: "랭커4", power: 40, color: .cyan),
+            RankList(name: "랭커5", power: 91230, color: .brown),
+            RankList(name: "랭커6", power: 9440, color: .gray),
+            RankList(name: "랭커7", power: 320, color: .green),
+            RankList(name: "랭커8", power: 34, color: .red),
+            RankList(name: "랭커9", power: 12, color: .green),
+            RankList(name: "랭커10", power: 90, color: .gray)
         ]
     }
     
     // 랭커 추가
     func addRankList(choicedRanker: RankList) {
-
         addedRanker.insert(choicedRanker, at: 0)
-//        saveStickers()
     }
     
     // 랭커 삭제
     func removeRankList(rankList: RankList) {
-        if let index = rankLists.firstIndex(where: { $0.id == rankList.id }) {
+        if let index = addedRanker.firstIndex(where: { $0.id == rankList.id }) {
             addedRanker.remove(at: index)
         }
     }
+    
+    // 랭커 전체 삭제
+    func removeAllRankList() {
+        addedRanker.removeAll()
+    }
 }
-
-//class StickerStore: ObservableObject {
-//
-//    @Published var stickers: [Sticker] = []
-//    func fetchStickers() {
-//        do {
-//            if let data = UserDefaults.standard.object(forKey: "Stickers") as? Data {
-//                let decoder: JSONDecoder = JSONDecoder()
-//                stickers = try decoder.decode([Sticker].self, from: data)
-//            }
-//        } catch {
-//            print("UserDefaults로 부터 데이터 가져오기 실패")
-//        }
-//    }
-//
-//    func saveStickers() {
-//        // JSON으로 배열 등등의 복잡 데이터를 단일한 데이터로 만들어준다 -> 데이터를 userDefault에 저장
-//        do {
-//            let endcoder: JSONEncoder = JSONEncoder()
-//            let data: Data = try endcoder.encode(stickers)
-//
-//            UserDefaults.standard.set(data, forKey: "Stickers")
-//        } catch {
-//            print("JSON 생성 후 UserDefaults 실패")
-//        }
-//    }
-//}

@@ -15,6 +15,7 @@
 		D5168B692A5B9CE100BB5D80 /* StickerAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B682A5B9CE100BB5D80 /* StickerAddView.swift */; };
 		D5168B6B2A5B9CEF00BB5D80 /* StickerColorSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B6A2A5B9CEF00BB5D80 /* StickerColorSelectView.swift */; };
 		D5168B6D2A5BEEAB00BB5D80 /* StickerEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B6C2A5BEEAB00BB5D80 /* StickerEditView.swift */; };
+		D51E324D2A6825FD003A33FA /* RankerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E324C2A6825FD003A33FA /* RankerView.swift */; };
 		D53064012A500A1D00824BE1 /* CharacterGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064002A500A1D00824BE1 /* CharacterGame.swift */; };
 		D53064032A500A3400824BE1 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064022A500A3400824BE1 /* CharacterData.swift */; };
 		D53064052A50163F00824BE1 /* PlayingGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064042A50163F00824BE1 /* PlayingGameView.swift */; };
@@ -80,6 +81,7 @@
 		D5168B682A5B9CE100BB5D80 /* StickerAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerAddView.swift; sourceTree = "<group>"; };
 		D5168B6A2A5B9CEF00BB5D80 /* StickerColorSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerColorSelectView.swift; sourceTree = "<group>"; };
 		D5168B6C2A5BEEAB00BB5D80 /* StickerEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerEditView.swift; sourceTree = "<group>"; };
+		D51E324C2A6825FD003A33FA /* RankerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankerView.swift; sourceTree = "<group>"; };
 		D53064002A500A1D00824BE1 /* CharacterGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGame.swift; sourceTree = "<group>"; };
 		D53064022A500A3400824BE1 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
 		D53064042A50163F00824BE1 /* PlayingGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingGameView.swift; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 			children = (
 				D55DCCFF2A6138E60010FEB6 /* RankListMainView.swift */,
 				D55DCD052A613E020010FEB6 /* RankListView.swift */,
+				D51E324C2A6825FD003A33FA /* RankerView.swift */,
 				D55DCD072A6144240010FEB6 /* RankerChoiceView.swift */,
 			);
 			path = View;
@@ -583,6 +586,7 @@
 				D547528A2A53EEE00085A9EB /* Basic.swift in Sources */,
 				D5168B692A5B9CE100BB5D80 /* StickerAddView.swift in Sources */,
 				D54752942A53EF7B0085A9EB /* RegionProtocols.swift in Sources */,
+				D51E324D2A6825FD003A33FA /* RankerView.swift in Sources */,
 				D566E7062A42E13800E2A480 /* FinalView.swift in Sources */,
 				D53064052A50163F00824BE1 /* PlayingGameView.swift in Sources */,
 				D547528C2A53EF200085A9EB /* MetroView.swift in Sources */,

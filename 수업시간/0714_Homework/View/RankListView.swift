@@ -11,30 +11,35 @@ struct RankListView: View {
     
     // 데이서 생성 및 초기화
     @ObservedObject var rankListStore: RankListStore = RankListStore()
-//    @State var ranker: RankList = RankList()
     @State var rankChoiceState: Bool = false
     
     
     var body: some View {
         NavigationStack {
                 List(rankListStore.addedRanker) { ranker in
-                    HStack {
-                        Text("\(ranker.name)")
-                        Spacer()
-        //                    .listRowBackground(getRankColor(ranker.color))
-                        Text("\(ranker.power)")
-                    }
-                    .padding(20)
-                    .frame(maxWidth: .infinity)
-                    .background(getRankColor(ranker.color))
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                    .shadow(radius: 8)
-                    .foregroundColor(.white)
-                    .swipeActions {
-                        Button("삭제"){
-                            rankListStore.removeRankList(rankList: ranker)
-                        }.tint(Color.red)
-                    }
+//                    HStack {
+//                        Text("\(ranker.name)")
+//                        Spacer()
+//        //                    .listRowBackground(getRankColor(ranker.color))
+//                        Text("\(ranker.power)")
+//                    }
+//                    .padding(20)
+//                    .frame(maxWidth: .infinity)
+//                    .background(getRankColor(ranker.color))
+//                    .clipShape(RoundedRectangle(cornerRadius: 10))
+//                    .shadow(radius: 8)
+//                    .foregroundColor(.white)
+//                    .swipeActions {
+//                        Button("삭제"){
+//                            rankListStore.removeRankList(rankList: ranker)
+//                        }.tint(Color.red)
+//                    }
+                    RankerView(rankListStore: RankListStore(), ranker: ranker)
+                        .swipeActions {
+                            Button("삭제"){
+                                rankListStore.removeRankList(rankList: ranker)
+                            }.tint(Color.red)
+                        }
                 }            
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
@@ -42,6 +47,15 @@ struct RankListView: View {
                             rankChoiceState = true
                         } label: {
                             Label("add", systemImage: "plus")
+                        }
+                    }
+                    
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button {
+                            print("전체 리스트 삭제")
+                            rankListStore.removeAllRankList()
+                        } label: {
+                            Label("removeAll", systemImage: "trash.slash")
                         }
                     }
                 }

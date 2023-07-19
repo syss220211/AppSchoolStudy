@@ -17,7 +17,8 @@ struct AppSchoolStudyApp: App {
 //            NumberGame()
 //            QuizGame(gameStatus: .start)
 //            ToDoMainView(startDate: Date(), dueDate: Date())
-            StickerMainView()
+//            StickerMainView()
+            RankListView()
         }
     }
 }

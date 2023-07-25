@@ -70,6 +70,7 @@
 		D5D7C74D2A56AE6300BF7CBF /* RandomMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7C74C2A56AE6300BF7CBF /* RandomMember.swift */; };
 		D5D7C74F2A56AE7500BF7CBF /* RandomMemberStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7C74E2A56AE7500BF7CBF /* RandomMemberStore.swift */; };
 		D5D7C7512A56B09E00BF7CBF /* RandomMemberAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7C7502A56B09E00BF7CBF /* RandomMemberAddView.swift */; };
+		D5E7ED7F2A6F4FE300A1AF9C /* SwiftUIDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E7ED7E2A6F4FE300A1AF9C /* SwiftUIDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +138,7 @@
 		D5D7C74C2A56AE6300BF7CBF /* RandomMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMember.swift; sourceTree = "<group>"; };
 		D5D7C74E2A56AE7500BF7CBF /* RandomMemberStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemberStore.swift; sourceTree = "<group>"; };
 		D5D7C7502A56B09E00BF7CBF /* RandomMemberAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemberAddView.swift; sourceTree = "<group>"; };
+		D5E7ED7E2A6F4FE300A1AF9C /* SwiftUIDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +242,7 @@
 		D55046B32A40118E00F0AD4C /* 수업시간 */ = {
 			isa = PBXGroup;
 			children = (
+				D5E7ED7D2A6F4FC800A1AF9C /* 0725_SwiftUITurtorial */,
 				D55C6E482A4412020032D95F /* 0614_ListChar */,
 				D566E6F72A42B7FA00E2A480 /* 0619_NumberGame */,
 				D566E6F62A42B7EE00E2A480 /* 0621_QuizModel */,
@@ -462,6 +465,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D5E7ED7D2A6F4FC800A1AF9C /* 0725_SwiftUITurtorial */ = {
+			isa = PBXGroup;
+			children = (
+				D5E7ED7E2A6F4FE300A1AF9C /* SwiftUIDemo.swift */,
+			);
+			path = 0725_SwiftUITurtorial;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -536,6 +547,7 @@
 				D5A15FA22A4D861E0084BECB /* MoneyCell.swift in Sources */,
 				D5D7C7452A5682C100BF7CBF /* RandomMemberMainView.swift in Sources */,
 				D58B86C12A4EC53800727CFD /* MovieMainView.swift in Sources */,
+				D5E7ED7F2A6F4FE300A1AF9C /* SwiftUIDemo.swift in Sources */,
 				D58B86C32A4EC56600727CFD /* MovieData.swift in Sources */,
 				D5168B632A5B9CBA00BB5D80 /* StickerListView.swift in Sources */,
 				D5A15F962A4D52970084BECB /* ChangeMoney.swift in Sources */,

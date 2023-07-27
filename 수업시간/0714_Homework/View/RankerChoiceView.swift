@@ -38,7 +38,8 @@ struct RankerChoiceView: View {
                                 .font(.title3)
                         }
                         .padding(20)
-                        .background(getRankColor(ranker.color))
+//                        .background(getRankColor(ranker.color))
+                        .background(ranker.color.getColor)
                         .shadow(radius: 8)
                         .foregroundColor(.white)
                         .clipShape(RoundedRectangle(cornerRadius: 10))

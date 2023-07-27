@@ -17,28 +17,49 @@ enum RankColor: String, Codable, CaseIterable {
     case brown
     case green
     case gray
-}
-
-func getRankColor(_ type: RankColor) -> Color {
-    switch type {
-    case .red:
-        return .red
-    case .orange:
-        return .orange
-    case .cyan:
-        return .cyan
-    case .yellow:
-        return .yellow
-    case .pink:
-        return .pink
-    case .brown:
-        return .brown
-    case .green:
-        return .green
-    case .gray:
-        return .gray
+    
+    var getColor: Color {
+        switch self {
+        case .red:
+            return .red
+        case .brown:
+            return .brown
+        case .cyan:
+            return .cyan
+        case .gray:
+            return .gray
+        case .green:
+            return .green
+        case .orange:
+            return .orange
+        case .pink:
+            return .pink
+        case .yellow:
+            return .yellow
+        }
     }
 }
+
+//func getRankColor(_ type: RankColor) -> Color {
+//    switch type {
+//    case .red:
+//        return .red
+//    case .orange:
+//        return .orange
+//    case .cyan:
+//        return .cyan
+//    case .yellow:
+//        return .yellow
+//    case .pink:
+//        return .pink
+//    case .brown:
+//        return .brown
+//    case .green:
+//        return .green
+//    case .gray:
+//        return .gray
+//    }
+//}
 
 struct RankList: Identifiable {
     var id: UUID = UUID()

@@ -22,7 +22,8 @@ struct RankerView: View {
         }
         .padding(20)
         .frame(maxWidth: .infinity)
-        .background(getRankColor(ranker.color))
+        .background(ranker.color.getColor)
+//        .background(getRankColor(ranker.color))
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .shadow(radius: 8)
         .foregroundColor(.white)

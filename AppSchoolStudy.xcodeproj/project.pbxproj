@@ -15,6 +15,11 @@
 		D5168B692A5B9CE100BB5D80 /* StickerAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B682A5B9CE100BB5D80 /* StickerAddView.swift */; };
 		D5168B6B2A5B9CEF00BB5D80 /* StickerColorSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B6A2A5B9CEF00BB5D80 /* StickerColorSelectView.swift */; };
 		D5168B6D2A5BEEAB00BB5D80 /* StickerEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168B6C2A5BEEAB00BB5D80 /* StickerEditView.swift */; };
+		D51835962A7BE46E001F8DB5 /* MapKitMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51835952A7BE46E001F8DB5 /* MapKitMainView.swift */; };
+		D518359E2A7BEC9E001F8DB5 /* MapKitContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518359D2A7BEC9E001F8DB5 /* MapKitContentView.swift */; };
+		D51835A02A7BF221001F8DB5 /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518359F2A7BF221001F8DB5 /* MyWebView.swift */; };
+		D51835A22A7BF8AD001F8DB5 /* CharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51835A12A7BF8AD001F8DB5 /* CharViewController.swift */; };
+		D51835A42A7BF904001F8DB5 /* MyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51835A32A7BF904001F8DB5 /* MyChartView.swift */; };
 		D51E324D2A6825FD003A33FA /* RankerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E324C2A6825FD003A33FA /* RankerView.swift */; };
 		D53064012A500A1D00824BE1 /* CharacterGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064002A500A1D00824BE1 /* CharacterGame.swift */; };
 		D53064032A500A3400824BE1 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064022A500A3400824BE1 /* CharacterData.swift */; };
@@ -39,6 +44,8 @@
 		D566E7062A42E13800E2A480 /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566E7052A42E13800E2A480 /* FinalView.swift */; };
 		D578B2B82A3DE25800FC9F18 /* codeStudyUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578B2B72A3DE25800FC9F18 /* codeStudyUI.swift */; };
 		D578B2BC2A3DE28800FC9F18 /* ObervableStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578B2BB2A3DE28800FC9F18 /* ObervableStudy.swift */; };
+		D585D5022A7246CD002925C5 /* PetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D585D5012A7246CD002925C5 /* PetDetailView.swift */; };
+		D585D5042A724835002925C5 /* PetDetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D585D5032A724835002925C5 /* PetDetailEditView.swift */; };
 		D589487F2A5545F7001111DE /* ToDoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D589487E2A5545F7001111DE /* ToDoStore.swift */; };
 		D58948812A554600001111DE /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58948802A554600001111DE /* ToDo.swift */; };
 		D58948832A554628001111DE /* ToDoMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58948822A554628001111DE /* ToDoMainView.swift */; };
@@ -82,6 +89,11 @@
 		D5168B682A5B9CE100BB5D80 /* StickerAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerAddView.swift; sourceTree = "<group>"; };
 		D5168B6A2A5B9CEF00BB5D80 /* StickerColorSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerColorSelectView.swift; sourceTree = "<group>"; };
 		D5168B6C2A5BEEAB00BB5D80 /* StickerEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerEditView.swift; sourceTree = "<group>"; };
+		D51835952A7BE46E001F8DB5 /* MapKitMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitMainView.swift; sourceTree = "<group>"; };
+		D518359D2A7BEC9E001F8DB5 /* MapKitContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitContentView.swift; sourceTree = "<group>"; };
+		D518359F2A7BF221001F8DB5 /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
+		D51835A12A7BF8AD001F8DB5 /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharViewController.swift; sourceTree = "<group>"; };
+		D51835A32A7BF904001F8DB5 /* MyChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChartView.swift; sourceTree = "<group>"; };
 		D51E324C2A6825FD003A33FA /* RankerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankerView.swift; sourceTree = "<group>"; };
 		D53064002A500A1D00824BE1 /* CharacterGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGame.swift; sourceTree = "<group>"; };
 		D53064022A500A3400824BE1 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
@@ -106,6 +118,8 @@
 		D566E7052A42E13800E2A480 /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
 		D578B2B72A3DE25800FC9F18 /* codeStudyUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeStudyUI.swift; sourceTree = "<group>"; };
 		D578B2BB2A3DE28800FC9F18 /* ObervableStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObervableStudy.swift; sourceTree = "<group>"; };
+		D585D5012A7246CD002925C5 /* PetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailView.swift; sourceTree = "<group>"; };
+		D585D5032A724835002925C5 /* PetDetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailEditView.swift; sourceTree = "<group>"; };
 		D589487E2A5545F7001111DE /* ToDoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoStore.swift; sourceTree = "<group>"; };
 		D58948802A554600001111DE /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		D58948822A554628001111DE /* ToDoMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoMainView.swift; sourceTree = "<group>"; };
@@ -182,6 +196,18 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D51835942A7BE455001F8DB5 /* 0803_MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				D518359D2A7BEC9E001F8DB5 /* MapKitContentView.swift */,
+				D51835952A7BE46E001F8DB5 /* MapKitMainView.swift */,
+				D51835A12A7BF8AD001F8DB5 /* CharViewController.swift */,
+				D518359F2A7BF221001F8DB5 /* MyWebView.swift */,
+				D51835A32A7BF904001F8DB5 /* MyChartView.swift */,
+			);
+			path = 0803_MapKit;
+			sourceTree = "<group>";
+		};
 		D53063FF2A5009BA00824BE1 /* 0630_Homework */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +268,8 @@
 		D55046B32A40118E00F0AD4C /* 수업시간 */ = {
 			isa = PBXGroup;
 			children = (
+				D51835942A7BE455001F8DB5 /* 0803_MapKit */,
+				D585D5002A7246AF002925C5 /* 0727_ProtoType */,
 				D5E7ED7D2A6F4FC800A1AF9C /* 0725_SwiftUITurtorial */,
 				D55C6E482A4412020032D95F /* 0614_ListChar */,
 				D566E6F72A42B7FA00E2A480 /* 0619_NumberGame */,
@@ -343,6 +371,15 @@
 				D55C6E492A44126B0032D95F /* Obervable */,
 			);
 			name = CodeStudy;
+			sourceTree = "<group>";
+		};
+		D585D5002A7246AF002925C5 /* 0727_ProtoType */ = {
+			isa = PBXGroup;
+			children = (
+				D585D5012A7246CD002925C5 /* PetDetailView.swift */,
+				D585D5032A724835002925C5 /* PetDetailEditView.swift */,
+			);
+			path = 0727_ProtoType;
 			sourceTree = "<group>";
 		};
 		D589487D2A5545B5001111DE /* 0705_ToDo */ = {
@@ -546,22 +583,28 @@
 				D59439CA2A39D6F2009C2F88 /* ContentView.swift in Sources */,
 				D5A15FA22A4D861E0084BECB /* MoneyCell.swift in Sources */,
 				D5D7C7452A5682C100BF7CBF /* RandomMemberMainView.swift in Sources */,
+				D585D5022A7246CD002925C5 /* PetDetailView.swift in Sources */,
 				D58B86C12A4EC53800727CFD /* MovieMainView.swift in Sources */,
 				D5E7ED7F2A6F4FE300A1AF9C /* SwiftUIDemo.swift in Sources */,
 				D58B86C32A4EC56600727CFD /* MovieData.swift in Sources */,
 				D5168B632A5B9CBA00BB5D80 /* StickerListView.swift in Sources */,
+				D518359E2A7BEC9E001F8DB5 /* MapKitContentView.swift in Sources */,
 				D5A15F962A4D52970084BECB /* ChangeMoney.swift in Sources */,
+				D51835962A7BE46E001F8DB5 /* MapKitMainView.swift in Sources */,
 				D589487F2A5545F7001111DE /* ToDoStore.swift in Sources */,
 				D5168B6B2A5B9CEF00BB5D80 /* StickerColorSelectView.swift in Sources */,
 				D58B86C92A4EDDF000727CFD /* MovieInfoView.swift in Sources */,
 				D5168B5D2A5B9C9200BB5D80 /* StickerStore.swift in Sources */,
 				D59439DD2A3A19F0009C2F88 /* Student.swift in Sources */,
 				D58B86B62A4EA39F00727CFD /* GradeView.swift in Sources */,
+				D585D5042A724835002925C5 /* PetDetailEditView.swift in Sources */,
 				D58B86BC2A4EA3D600727CFD /* SchoolMainView.swift in Sources */,
+				D51835A02A7BF221001F8DB5 /* MyWebView.swift in Sources */,
 				D54752902A53EF4B0085A9EB /* SpecialCityView.swift in Sources */,
 				D58B86B82A4EA3B200727CFD /* SchoolClassView.swift in Sources */,
 				D5168B5B2A5B9C8C00BB5D80 /* Sticker.swift in Sources */,
 				D566E6F92A42B83300E2A480 /* QuizModel.swift in Sources */,
+				D51835A22A7BF8AD001F8DB5 /* CharViewController.swift in Sources */,
 				D55DCD062A613E020010FEB6 /* RankListView.swift in Sources */,
 				D58B86BE2A4EA3E300727CFD /* SchoolData.swift in Sources */,
 				D58B86CB2A4EE06C00727CFD /* MovieCastView.swift in Sources */,
@@ -595,6 +638,7 @@
 				D5D7C74F2A56AE7500BF7CBF /* RandomMemberStore.swift in Sources */,
 				D58948832A554628001111DE /* ToDoMainView.swift in Sources */,
 				D547528E2A53EF380085A9EB /* SpecialProvinceView.swift in Sources */,
+				D51835A42A7BF904001F8DB5 /* MyChartView.swift in Sources */,
 				D547528A2A53EEE00085A9EB /* Basic.swift in Sources */,
 				D5168B692A5B9CE100BB5D80 /* StickerAddView.swift in Sources */,
 				D54752942A53EF7B0085A9EB /* RegionProtocols.swift in Sources */,

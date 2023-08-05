@@ -18,9 +18,12 @@
 		D51835962A7BE46E001F8DB5 /* MapKitMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51835952A7BE46E001F8DB5 /* MapKitMainView.swift */; };
 		D518359E2A7BEC9E001F8DB5 /* MapKitContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518359D2A7BEC9E001F8DB5 /* MapKitContentView.swift */; };
 		D51835A02A7BF221001F8DB5 /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518359F2A7BF221001F8DB5 /* MyWebView.swift */; };
-		D51835A22A7BF8AD001F8DB5 /* CharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51835A12A7BF8AD001F8DB5 /* CharViewController.swift */; };
 		D51835A42A7BF904001F8DB5 /* MyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51835A32A7BF904001F8DB5 /* MyChartView.swift */; };
 		D51E324D2A6825FD003A33FA /* RankerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E324C2A6825FD003A33FA /* RankerView.swift */; };
+		D52250BE2A7C8AF40071B631 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52250BD2A7C8AF40071B631 /* ChartViewController.swift */; };
+		D52250C52A7CCE570071B631 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52250C42A7CCE570071B631 /* SafariView.swift */; };
+		D52250C72A7CCEBF0071B631 /* MySafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52250C62A7CCEBF0071B631 /* MySafariView.swift */; };
+		D52250CF2A7CDDCB0071B631 /* WebMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52250CE2A7CDDCB0071B631 /* WebMainView.swift */; };
 		D53064012A500A1D00824BE1 /* CharacterGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064002A500A1D00824BE1 /* CharacterGame.swift */; };
 		D53064032A500A3400824BE1 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064022A500A3400824BE1 /* CharacterData.swift */; };
 		D53064052A50163F00824BE1 /* PlayingGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53064042A50163F00824BE1 /* PlayingGameView.swift */; };
@@ -92,9 +95,12 @@
 		D51835952A7BE46E001F8DB5 /* MapKitMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitMainView.swift; sourceTree = "<group>"; };
 		D518359D2A7BEC9E001F8DB5 /* MapKitContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitContentView.swift; sourceTree = "<group>"; };
 		D518359F2A7BF221001F8DB5 /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
-		D51835A12A7BF8AD001F8DB5 /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharViewController.swift; sourceTree = "<group>"; };
 		D51835A32A7BF904001F8DB5 /* MyChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChartView.swift; sourceTree = "<group>"; };
 		D51E324C2A6825FD003A33FA /* RankerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankerView.swift; sourceTree = "<group>"; };
+		D52250BD2A7C8AF40071B631 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		D52250C42A7CCE570071B631 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		D52250C62A7CCEBF0071B631 /* MySafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySafariView.swift; sourceTree = "<group>"; };
+		D52250CE2A7CDDCB0071B631 /* WebMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebMainView.swift; sourceTree = "<group>"; };
 		D53064002A500A1D00824BE1 /* CharacterGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGame.swift; sourceTree = "<group>"; };
 		D53064022A500A3400824BE1 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
 		D53064042A50163F00824BE1 /* PlayingGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingGameView.swift; sourceTree = "<group>"; };
@@ -201,11 +207,21 @@
 			children = (
 				D518359D2A7BEC9E001F8DB5 /* MapKitContentView.swift */,
 				D51835952A7BE46E001F8DB5 /* MapKitMainView.swift */,
-				D51835A12A7BF8AD001F8DB5 /* CharViewController.swift */,
 				D518359F2A7BF221001F8DB5 /* MyWebView.swift */,
+				D52250BD2A7C8AF40071B631 /* ChartViewController.swift */,
 				D51835A32A7BF904001F8DB5 /* MyChartView.swift */,
+				D52250C62A7CCEBF0071B631 /* MySafariView.swift */,
+				D52250C42A7CCE570071B631 /* SafariView.swift */,
 			);
 			path = 0803_MapKit;
+			sourceTree = "<group>";
+		};
+		D52250CB2A7CDD860071B631 /* 0804_WebView */ = {
+			isa = PBXGroup;
+			children = (
+				D52250CE2A7CDDCB0071B631 /* WebMainView.swift */,
+			);
+			path = 0804_WebView;
 			sourceTree = "<group>";
 		};
 		D53063FF2A5009BA00824BE1 /* 0630_Homework */ = {
@@ -268,6 +284,7 @@
 		D55046B32A40118E00F0AD4C /* 수업시간 */ = {
 			isa = PBXGroup;
 			children = (
+				D52250CB2A7CDD860071B631 /* 0804_WebView */,
 				D51835942A7BE455001F8DB5 /* 0803_MapKit */,
 				D585D5002A7246AF002925C5 /* 0727_ProtoType */,
 				D5E7ED7D2A6F4FC800A1AF9C /* 0725_SwiftUITurtorial */,
@@ -604,16 +621,19 @@
 				D58B86B82A4EA3B200727CFD /* SchoolClassView.swift in Sources */,
 				D5168B5B2A5B9C8C00BB5D80 /* Sticker.swift in Sources */,
 				D566E6F92A42B83300E2A480 /* QuizModel.swift in Sources */,
-				D51835A22A7BF8AD001F8DB5 /* CharViewController.swift in Sources */,
 				D55DCD062A613E020010FEB6 /* RankListView.swift in Sources */,
 				D58B86BE2A4EA3E300727CFD /* SchoolData.swift in Sources */,
 				D58B86CB2A4EE06C00727CFD /* MovieCastView.swift in Sources */,
 				D5D7C7472A5683F600BF7CBF /* PickedMemberView.swift in Sources */,
+				D52250BE2A7C8AF40071B631 /* ChartViewController.swift in Sources */,
 				D55DCD082A6144240010FEB6 /* RankerChoiceView.swift in Sources */,
 				D5168B672A5B9CD700BB5D80 /* StickerView.swift in Sources */,
 				D54752882A53EEDA0085A9EB /* Metro.swift in Sources */,
+				D52250C72A7CCEBF0071B631 /* MySafariView.swift in Sources */,
 				D54752962A53EF860085A9EB /* MetroProtocols.swift in Sources */,
+				D52250CF2A7CDDCB0071B631 /* WebMainView.swift in Sources */,
 				D53064012A500A1D00824BE1 /* CharacterGame.swift in Sources */,
+				D52250C52A7CCE570071B631 /* SafariView.swift in Sources */,
 				D55046B52A4011A600F0AD4C /* NumberGame.swift in Sources */,
 				D58B86BA2A4EA3B800727CFD /* StudentView.swift in Sources */,
 				D5A15F9C2A4D84430084BECB /* backupview.swift in Sources */,

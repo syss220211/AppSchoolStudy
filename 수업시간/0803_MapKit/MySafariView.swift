@@ -1,16 +1,17 @@
 //
-//  MyChartView.swift
+//  MySafariView.swift
 //  AppSchoolStudy
 //
 //  Created by 박서연 on 2023/08/04.
 //
 
 import SwiftUI
+import SafariServices
 
-struct MyChartView: UIViewControllerRepresentable { // 뷰컨자체를 가져와서 사용하는 방법
+struct MySafariView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> some UIViewController {
-        
-        return ChartViewController()
+        let safariViewController = SFSafariViewController(url: URL(string: "https://www.youtube.com/")!)
+        return safariViewController
     }
     
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
@@ -18,8 +19,8 @@ struct MyChartView: UIViewControllerRepresentable { // 뷰컨자체를 가져와
     }
 }
 
-struct MyChartView_Previews: PreviewProvider {
+struct MySafariView_Previews: PreviewProvider {
     static var previews: some View {
-        MyChartView()
+        MySafariView()
     }
 }

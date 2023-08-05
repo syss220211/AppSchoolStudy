@@ -34,7 +34,10 @@ struct MapKitContentView: View {
             MyChartView().tabItem {
                 Text("Third")
             }.tag(3)
-         
+            
+            SafariView().tabItem {
+                Text("Fourth")
+            }.tag(4)
         }
     }
 }
